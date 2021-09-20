@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    back:
+        container_name: rfid
+        build:
+            context: ./API_rfid/
+            dockerfile: Dockerfile
+        ports: 
+            - 3000:8080
