@@ -118,6 +118,18 @@ Après avoir afficher "END", si le joystick bouge votre serpent reprend la posit
 
 </details>
 
+Cette exercice consiste à lire un badge en RFID, vous aurez besoin de la bibliothèque [SPI](https://www.arduino.cc/en/reference/SPI) et [MFRC522](https://github.com/miguelbalboa/rfid).
+Si son contenu est correct une led Verte s'allume.
+Sinon une led rouge s'allume accompagné d'un bruit émis par le buzzer.
+
+Vous allez tout d'abord connecter votre lecteur RFID à votre Arduino.
+Ecrivez un programme vous permettant de lire le contenu d'un carte en RFID.
+Maintenant, il vous reste plus cas allumer la LED rouge ou vert quand une carte est lu.
+La couleur de la LED correspond à la comparaison entre le contenu de la carte est d'une valeur de référence.
+
+> :warning: N'oubliez pas d'utilisez des resistances pour vos LED.
+
+
 ## Shi Fu Mi
 
 <details>
