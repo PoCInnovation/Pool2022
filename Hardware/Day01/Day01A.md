@@ -90,6 +90,21 @@ Quand vous appuyez sur la touche "*", votre écran affiche "=" suivi du résulta
 
 </details>
 
+Cette exercice consiste à recréer le jeu snake.
+Vous allez tout d'abord connecté votre matrice à votre Arduino Uno.
+Ajouté la [bibliothèque](https://github.com/wayoda/LedControl) pour allumer des leds sur votre matrice.
+Faite en sorte d'avoir un pixel qui s'affiche aléatoirement toutes les secondes.
+
+Vous allez ensuite connecté votre joystick sur votre arduino et faire avancé 2 pixels simultanément et les mouvoirs avec votre joystick.
+Ajouter un potentiomètre pour contrôler la vitesse de vos affichage.
+
+Vous avez maintenant toutes les étapes pour finir cette exercice.
+Ajoutez votre pixel aléatoire et affichez en un nouveau quand la tête de votre serpent touche celui ci.
+Dès que votre serpent touche une pomme, une led est ajouté à sa fin.
+Votre dernière étape est de restart : afficher "END" quand votre serpent touche une de ses leds ou quand il sort de la matrice.
+
+Après avoir afficher "END", si le joystick bouge votre serpent reprend la position initial avec sa taille de départ.
+
 ## RFID Pass
 
 <details>
