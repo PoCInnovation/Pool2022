@@ -61,6 +61,23 @@ Si le joueur prend plus de `3 secondes` pour appuyer sur un boutton il a perdu.
 
 </details>
 
+L'objectif de cette tâche est de créer une calculatrice.
+
+La première étape est de votre écran à votre Arduino.
+Ensuite il vous suffit d'utiliser la bibliothèque correspondant à votre [écran](https://www.arduino.cc/reference/en/libraries/liquidcrystal-i2c/) pour afficher "Hello World !".
+
+Votre deuxième objectif l'installation de votre keypad sur votre Arduino et d'installer votre bibliothèque pour le [keypad](https://github.com/Chris--A/Keypad).
+A chaque fois que vous appuyer sur un nombre vous devez l'afficher sur votre écran LCD quand vous appuyez sur la touche "*".
+
+Pour définir les opérateurs dans notre keypad, nous allons partir de se postulat:
+- A : '/'
+- B : '*'
+- C : '+'
+- D : '-'
+
+Il est maintenant temps de combiner vos opérateurs et vos chiffres.
+Quand vous appuyez sur la touche "*", votre écran affiche "=" suivi du résultat. 
+
 ## Snake
 
 <details>
