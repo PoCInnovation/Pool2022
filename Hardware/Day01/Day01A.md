@@ -141,3 +141,18 @@ La couleur de la LED correspond à la comparaison entre le contenu de la carte e
 * Buzzer
 
 </details>
+
+Cette exercice consiste à créer un Shi Fu Mi.
+Chaque servo-moteurs correspond à une action (Shi, Fu, Mi).
+Le capteur Ultrasonic permet d'évaluer si un geste de la part de l'adversaire a été perçu.
+Le Buzzer émets un son quand l'action est executé.
+
+La première partie consiste à connecter votre capteur ultrasonic quand un objet entre dans une zone de 30 cm.
+Ajouter le buzzer, il doit émettre un bruit tant qu'un objet est dans la zone.
+
+Vous allez ensuite connecter un servo moteur et quand, un objet entre dans la zone le servo moteur s'active.
+Votre dernière étape consiste à mettre les 3 servo-moteurs dans votre circuit et d'en activer un aléatoirement quand une action est reconnu par le capteur ultrasonic.
+
+> 😊 Vous avez enfin finit votre circuit et votre premier jour de piscine !
+> ㊗️ Félicitations
+
