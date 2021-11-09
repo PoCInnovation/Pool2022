@@ -1,6 +1,6 @@
 # :wave: Bienvenue à la piscine hardware 2022 de PoC !
 
-Pendant une semaine, vous allez pouvoir découvrir plusieurs facettes de l'hardware: de la communication entre les modules/sensor, concept plus pousser comme l'iot, les protocoles de communication.  
+Pendant une semaine, vous allez pouvoir découvrir plusieurs facettes de l'hardware: de la communication entre les modules/sensor, concept plus pousser comme l'iot, les protocoles de communication. :rocket:
 
 Vous aurez, à l'issue de cette piscine, toutes les clefs en main pour démarrer n'importe quels projets de bas niveau.  
 
