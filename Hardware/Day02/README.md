@@ -38,6 +38,16 @@ Et le plus important vous allez avoir une brève approche à l'`IOT` (Internet O
 ## 0 - Setup
 
 ## 1 - USB
+
+Nous allons établir une connection Serial entre notre PC et notre micro-processeur.
+Pour vous permettre la communication nous allons utiliser le moniteur série.
+
+#### 1.1 Fréquence de transmission
+Dans votre partie setup vous allez réglez votre transmission à 9600 baud.
+Ensuite dans votre loop affichez "**Hello World**".
+
+il ne vous reste plus qu'à ouvrir votre Moniteur série sur 9600 baud et voir votre message.
+
 ### Graph Météo :sunny:
 
 ## 2 - MQTT
