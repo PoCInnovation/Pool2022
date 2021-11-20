@@ -5,7 +5,8 @@
   - [0 - Setup](#0---setup)
   - [1 - USB](#1---usb)
     - [1.1 - Fréquence de transmission](#11---fréquence-de-transmission)
-    - [1.2 - Lecture des messages dans le moniteur](#12---lecture-des-messages-dans-le-moniteur) 
+    - [1.2 - Lecture des messages dans le moniteur](#12---lecture-des-messages-dans-le-moniteur)
+    - [ 1.3 - Executer des calcules](#13---executer-des-calcules)
     - [Graph Météo :sunny:](#graph-météo-sunny)
   - [2 - MQTT](#2---mqtt)
     - [IFTT turn on LED with your vocal assistant ! :speaking_head:](#iftt-turn-on-led-with-your-vocal-assistant--speaking_head)
@@ -56,6 +57,15 @@ Maintenant que vous avez appris à écrire des messages, il est temps de lire le
 
 Ecrivez une condition dans votre loop pour vérifier qu'un message est reçu et afficher le. :muscle:
 
+### 1.3 - Executer des calcules
+
+Nous savons récupérer les messages, les écrires nous allons maintenant stocker les valeurs reçus pour effectuer un calcul.
+
+Créer une fonction qui récupère deux valeurs en input et les additionnes. :heavy_plus_sign:
+Une fois le calcul fait, renvoyer la valeur.
+
+> :stuck_out_tongue_winking_eye: N'oubliez pas de vérifiez que le éléments sont bien des nombres.
+ 
 ### Graph Météo :sunny:
 
 ## 2 - MQTT
