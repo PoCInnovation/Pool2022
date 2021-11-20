@@ -4,7 +4,8 @@
   - [Introduction](#introduction)
   - [0 - Setup](#0---setup)
   - [1 - USB](#1---usb)
-    - [1.1 - Fréquence de transmission](#11---fréquence-de-transmission) 
+    - [1.1 - Fréquence de transmission](#11---fréquence-de-transmission)
+    - [1.2 - Lecture des messages dans le moniteur](#12---lecture-des-messages-dans-le-moniteur) 
     - [Graph Météo :sunny:](#graph-météo-sunny)
   - [2 - MQTT](#2---mqtt)
     - [IFTT turn on LED with your vocal assistant ! :speaking_head:](#iftt-turn-on-led-with-your-vocal-assistant--speaking_head)
@@ -45,9 +46,15 @@ Pour vous permettre la communication nous allons utiliser le moniteur série.
 
 ### 1.1 - Fréquence de transmission
 Dans votre partie setup vous allez réglez votre transmission à 9600 baud.
-Ensuite dans votre loop affichez "**Hello World**".
+Ensuite toujours dans votre setup affichez "**Hello World**".
 
 il ne vous reste plus qu'à ouvrir votre Moniteur série sur 9600 baud et voir votre message.
+
+### 1.2 - Lecture des messages dans le moniteur
+
+Maintenant que vous avez appris à écrire des messages, il est temps de lire les messages reçu par le biais de l'input de votre moniteur.
+
+Ecrivez une condition dans votre loop pour vérifier qu'un message est reçu et afficher le. :muscle:
 
 ### Graph Météo :sunny:
 
