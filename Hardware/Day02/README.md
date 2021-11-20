@@ -4,6 +4,7 @@
   - [Introduction](#introduction)
   - [0 - Setup](#0---setup)
   - [1 - USB](#1---usb)
+    - [1.1 - Fréquence de transmission](#11---fréquence-de-transmission) 
     - [Graph Météo :sunny:](#graph-météo-sunny)
   - [2 - MQTT](#2---mqtt)
     - [IFTT turn on LED with your vocal assistant ! :speaking_head:](#iftt-turn-on-led-with-your-vocal-assistant--speaking_head)
@@ -42,7 +43,7 @@ Et le plus important vous allez avoir une brève approche à l'`IOT` (Internet O
 Nous allons établir une connection Serial entre notre PC et notre micro-processeur.
 Pour vous permettre la communication nous allons utiliser le moniteur série.
 
-#### 1.1 Fréquence de transmission
+### 1.1 - Fréquence de transmission
 Dans votre partie setup vous allez réglez votre transmission à 9600 baud.
 Ensuite dans votre loop affichez "**Hello World**".
 
