@@ -11,15 +11,17 @@
   - [2 - MQTT](#2---mqtt)
     - [IFTT turn on LED with your vocal assistant ! :speaking_head:](#iftt-turn-on-led-with-your-vocal-assistant--speaking_head)
   - [3 - Bluetooth](#3---bluetooth)
-    - [Chating :selfie:](#chating-selfie)
+    - [3.1 - Create Server BLE](#31---create-server-ble)
+    - [3.2 - Set Client with your phone](#32---set-client-with-your-phone)
+    - [3.3 - Scan BLE](#33---scan-cle)
   - [4 - WiFi](#4---wifi)
     - [4.1 - Color Picker :syringe:](#41---color-picker-syringe)
-      - [4.1.1 Piloter la LED](#411-piloter-la-led)
-      - [4.1.2 Créer votre premier Access Point](#412-créer-votre-premier-access-point)
-      - [4.1.3 Web Server sur ESP32](#413-web-server-sur-esp32)
+    - [4.1.1 Piloter la LED](#411-piloter-la-led)
+    - [4.1.2 Créer votre premier Access Point](#412-créer-votre-premier-access-point)
+    - [4.1.3 Web Server sur ESP32](#413-web-server-sur-esp32)
     - [4.2 - Among Us du RFC :detective:](#among-us-du-rfc-detective)
-      - [4.2.1 Lancer l'API](#421-lancer-lapi)
-      - [4.2.2 Trouver les imposteurs](#422-trouver-les-imposteurs)
+    - [4.2.1 Lancer l'API](#421-lancer-lapi)
+    - [4.2.2 Trouver les imposteurs](#422-trouver-les-imposteurs)
 
 ## Introduction
 
@@ -72,12 +74,79 @@ Une fois le calcul fait, renvoyer la valeur.
 ### IFTT turn on LED with your vocal assistant ! :speaking_head:
 
 ## 3 - Bluetooth
-### Chating :selfie:
+Le BLE signifie Bluetooth Low Energy.
+
+### 3.1 - Create Server BLE
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+We will create a Bluetooth server with our ESP32.
+
+> * Create your local bluetooth and set `BLE ESP32 - [YourName]` as local server name.
+
+To verify that your server is created, take your phone and look at the Bluetooth networks.
+If you manage to connect to yours, go to the next step!
+
+### 📚 Documentation:
+- [BLE Server](http://www.neilkolban.com/esp32/docs/cpp_utils/html/class_b_l_e_server.html)
+
+### 3.2 - Set Client with your phone
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+Now that we have a BLE server, we will define a client to communicate with our ESP32.<br/>
+For this, we will use a mobile application: `Serial Bluetooth Terminal`.<br/>
+
+- Go to `Devices`. 
+- Click the settings icon, and select Pair new device.
+- Choose and pair with your BLE server.
+:blub: Make sure you’ve enable your smartphone’s Bluetooth.
+- Go back to the `Serial Bluetooth Terminal`.
+- Click the icon at the top to connect to the BLE server.
+
+You should get a `Connected` message.
+
+:blub: You can send message between your monitor and `Serial Bluetooth Terminal` !
+
+Let's continue to the next step!
+
+### 3.3 - Scan BLE
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+We will now create a bluetooth scanner with a second ESP32.
+
+:blub: `#include <BLEScan.h>`, `#include <BLEAdvertisedDevice.h>` <br/>
+> :warning: Be careful to upload one code at a time on each board. <br/>
+
+If you find the name of your BLE server in the monitor of your scanner, you have succeeded!
+
+### 📚 Documentation:
+- [Scan BLE](http://www.neilkolban.com/esp32/docs/cpp_utils/html/class_b_l_e_scan.html)
+
+## :tada: Congratulation !
+
+You now know the basics of BLE ESP32.<br/>
 
 ## 4 - Wifi
 ### 4.1 - Color Picker :syringe:
 
-Créer  otre premier `web server` sur ESP32 permettant de contrôler la couleur d'une LED RGB
+Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur d'une LED RGB
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
