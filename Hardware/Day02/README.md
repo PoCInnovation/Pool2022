@@ -9,6 +9,12 @@
     - [ 1.3 - Executer des calcules](#13---executer-des-calcules)
     - [Graph Météo :sunny:](#graph-météo-sunny)
   - [2 - MQTT](#2---mqtt)
+  - [2.1 - Connect to Wi-Fi](#21---connect-to-wi-fi)
+  - [2.2 - SetUp Mosquitto](#22---setup-mosquitto)
+  - [2.3 - SetUp your first Subscribe to Mosquitto](#23---setup-your-first-subscribe-to-mosquitto)
+  - [2.4 - Publish with Mosquitto](#24---publish-with-mosquitto)
+  - [2.5 - Set MQTT with your esp32](#25---set-mqtt-with-your-esp32)
+  - [2.6 - Create your Broker](#26---create-your-broker)
     - [IFTT turn on LED with your vocal assistant ! :speaking_head:](#iftt-turn-on-led-with-your-vocal-assistant--speaking_head)
   - [3 - Bluetooth](#3---bluetooth)
     - [3.1 - Create Server BLE](#31---create-server-ble)
@@ -49,7 +55,7 @@ Pour vous permettre la communication nous allons utiliser le moniteur série.
 
 ### 1.1 - Fréquence de transmission
 Dans votre partie setup vous allez réglez votre transmission à 9600 baud.
-Ensuite toujours dans votre setup affichez "**Hello World**".
+Ensuite toujours dans votre setup affichez *Hello World*.
 
 il ne vous reste plus qu'à ouvrir votre Moniteur série sur 9600 baud et voir votre message.
 
@@ -71,6 +77,180 @@ Une fois le calcul fait, renvoyer la valeur.
 ### Graph Météo :sunny:
 
 ## 2 - MQTT
+Le MQTT est un protocole permettant de connecté plusieurs objets utilisant des technologies differentes.
+### 2.1 - Connect to Wi-Fi
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+### 📑 Description:  
+
+For this step, you will set ssid and password for connect your board to the WI-Fi. <br/>
+Integred conditional state for print Wi-fi and Ip Address of your device. <br/>
+
+* For print data you must use serial connection.
+* The first purpose of the MQTT IOT is a Wi-Fi.
+
+### 📌 Tasks:
+
+- Print `ip` of your board in `serial monitor`
+
+### 📚 Documentation:
+- [ESP32 Wi-Fi configuration](https://tttapa.github.io/ESP8266/Chap07%20-%20Wi-Fi%20Connections.html)
+- [Function to serial connection](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
+- [Init Serial Connection](https://www.arduino.cc/reference/en/language/functions/communication/serial/ifserial/)
+
+### ✔️ Validation:
+
+- Ping your device.  
+If this step is ending you can go out to the next step. :tada:
+
+
+## 2.2 - SetUp Mosquitto
+
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- Your Computer
+
+</details>
+
+### 📑 Description:  
+
+Now that you have an network to your esp32. <br/>
+This is the first step. <br/>
+Then you must understand and work MQTT IoT. <br/>
+
+- Take your computer and [download Mosquitto](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/). <br/>
+- On this piece you have a [Broker MQTT](https://www.journaldunet.fr/web-tech/dictionnaire-de-l-iot/1440686-mqtt-comment-fonctionne-ce-protocole/) with a raspberry. <br/>
+
+### 📌 Tasks:
+
+* Call a manager to explain how a broker works. :wave:
+
+### 📚 Documentation:
+- [Download Mosquitto](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/)
+- [Broker MQTT](https://www.journaldunet.fr/web-tech/dictionnaire-de-l-iot/1440686-mqtt-comment-fonctionne-ce-protocole/)
+
+## 2.3 - SetUp your first Subscribe to Mosquitto
+
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- Your computer
+
+</details>
+
+### 📑 Description:
+
+Now it's time to know how subscribes to a topic.
+
+### 📌 Tasks:
+
+> This information is necessary to communicate with the Broker :rocket:
+
+**Topic** : /Workshop/Hardware/MQTT  
+**Username** : MosquiFruit  
+**Password** : SendMeYourEmail  
+
+- First step : Subscribe to all topics
+- Second step : Subscribe to specifique topic /Workshop/Hardware/MQTT
+> :blush: Subscribe to the topic
+
+### 📚 Documentation:
+- [Subscribe Mosquitto](https://mosquitto.org/man/mosquitto_sub-1.html)
+- [Template subscribe](https://docs.solace.com/Open-APIs-Protocols/MQTT/MQTT-Topics.htm)
+- [Example Subscribe](https://projetsdiy.fr/mosquitto-broker-mqtt-raspberry-pi/)
+- [Mosquitto information](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/)
+
+### ✔️ Validation:  
+
+If your received message, you can jump to the task 06 :tada:
+
+
+## 2.4 - Publish with Mosquitto
+
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- Your Computer
+</details>
+
+### 📌 Tasks:
+You will now publish your epitech :e-mail: to the topic **/Workshop/Hardware/**. <br/>
+You can find all information in the step 05 to send me your email. <br/>
+If the messages appear in my log you have successfully completed this step! <br/>
+
+Let's continue to the next step! :clap:
+
+### 📚 Documentation:
+- [Publish Mosquitto](https://mosquitto.org/man/mosquitto_pub-1.html)
+- [Example Pusblish](https://projetsdiy.fr/mosquitto-broker-mqtt-raspberry-pi/)
+- [Mosquitto information](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/)
+
+## 2.5 - Set MQTT with your esp32
+
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+### 📑 Description:
+
+We will set up network on your esp32 and understand how use MQTT. <br/>
+Now you must publish and subcribe to topic with your esp32.
+
+### 📌 Tasks:
+- Create client
+- Subscribe to `/Workshop/Hardware/Step07/`
+- Publish the date time.
+
+> :point_right: Don't forget information for the communication with the broker local.
+
+Surprise The Broker respond to you :sunglasses: <br/>
+
+You can pass to the last step of this Workshop !
+
+### 📚 Documentation:
+- [Code example](https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/)
+- [Other example](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
+
+## 2.6 - Create your Broker
+
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- Raspberry Pi
+- USB cable
+
+</details>
+
+### 📑 Description:
+
+Come and see a supervisor and ask for a raspberry pi :surfer:
+
+The raspberry is almost configurate.
+
+### 📌 Tasks:
+
+Your job if you accept it is :
+- to change the mosquitto configuration to subscribe to /Workshop/Hardware/Success.
+- Redirect the messages to the main broker.
+
+> :blush: After change config, don't forget to restart service.
+
+### 📚 Documentation:
+- [Configuration MQTT](http://www.steves-internet-guide.com/mosquitto-bridge-configuration/)
+- [Configuration mosquitto.conf](https://stackoverflow.com/questions/33867534/how-to-conditionally-forward-messages-between-two-bridged-mqtt-broker)
+
+## :tada: Congratulation !
 ### IFTT turn on LED with your vocal assistant ! :speaking_head:
 
 ## 3 - Bluetooth
