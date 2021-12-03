@@ -22,12 +22,12 @@
     - [3.3 - Scan BLE](#33---scan-cle)
   - [4 - WiFi](#4---wifi)
     - [4.1 - Color Picker :syringe:](#41---color-picker-syringe)
-    - [4.1.1 Piloter la LED](#411-piloter-la-led)
-    - [4.1.2 Créer votre premier Access Point](#412-créer-votre-premier-access-point)
-    - [4.1.3 Web Server sur ESP32](#413-web-server-sur-esp32)
+      - [4.1.1 Piloter la LED](#411-piloter-la-led)
+      - [4.1.2 Créer votre premier Access Point](#412-créer-votre-premier-access-point)
+      - [4.1.3 Web Server sur ESP32](#413-web-server-sur-esp32)
     - [4.2 - Among Us du RFC :detective:](#among-us-du-rfc-detective)
-    - [4.2.1 Lancer l'API](#421-lancer-lapi)
-    - [4.2.2 Trouver les imposteurs](#422-trouver-les-imposteurs)
+      - [4.2.1 Lancer l'API](#421-lancer-lapi)
+      - [4.2.2 Trouver les imposteurs](#422-trouver-les-imposteurs)
 
 ## Introduction
 
