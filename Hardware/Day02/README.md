@@ -31,7 +31,7 @@
 
 ## Introduction
 
-Lors de cette journée, vous allez apprendre plusieurs `protocoles de communication` et élaborer des projets autour de ses protocoles que l'on retrouve partout dans notre quotidien !  
+Lors de cette journée, vous allez apprendre plusieurs `protocoles de communication` et élaborer des projets autour de ses protocoles que l'on retrouve partout dans notre quotidien !
 Et le plus important vous allez avoir une brève approche à l'`IOT` (Internet Of Things)
 
 - Inter System Communication Protocols
@@ -50,34 +50,34 @@ Et le plus important vous allez avoir une brève approche à l'`IOT` (Internet O
 
 ## 1 - USB
 
-Nous allons établir une connection Serial entre notre PC et notre micro-processeur.
+Nous allons établir une connexion Serial entre notre PC et notre micro-processeur.
 Pour vous permettre la communication nous allons utiliser le moniteur série.
 
 ### 1.1 - Fréquence de transmission
 Dans votre partie setup vous allez réglez votre transmission à 9600 baud.
 Ensuite toujours dans votre setup affichez *Hello World*.
 
-il ne vous reste plus qu'à ouvrir votre Moniteur série sur 9600 baud et voir votre message.
+Il ne vous reste plus qu'à ouvrir votre Moniteur série sur 9600 baud et voir votre message.
 
 ### 1.2 - Lecture des messages dans le moniteur
 
 Maintenant que vous avez appris à écrire des messages, il est temps de lire les messages reçu par le biais de l'input de votre moniteur.
 
-Ecrivez une condition dans votre loop pour vérifier qu'un message est reçu et afficher le. :muscle:
+Écrivez une condition dans votre loop pour vérifier qu'un message est reçu et afficher le. :muscle:
 
 ### 1.3 - Executer des calcules
 
-Nous savons récupérer les messages, les écrires nous allons maintenant stocker les valeurs reçus pour effectuer un calcul.
+Nous savons récupérer les messages, les écrire nous allons maintenant stocker les valeurs reçus pour effectuer un calcul.
 
 Créer une fonction qui récupère deux valeurs en input et les additionnes. :heavy_plus_sign:
 Une fois le calcul fait, renvoyer la valeur.
 
 > :stuck_out_tongue_winking_eye: N'oubliez pas de vérifiez que le éléments sont bien des nombres.
- 
+
 ### Graph Météo :sunny:
 
 ## 2 - MQTT
-Le MQTT est un protocole permettant de connecté plusieurs objets utilisant des technologies differentes.
+Le MQTT est un protocole permettant de connecté plusieurs objets utilisant des technologies différentes.
 ### 2.1 - Connect to Wi-Fi
 <details>
     <summary> 🛠️ Required Hardware:</summary>
@@ -87,7 +87,7 @@ Le MQTT est un protocole permettant de connecté plusieurs objets utilisant des 
 
 </details>
 
-### 📑 Description:  
+### 📑 Description:
 
 For this step, you will set ssid and password for connect your board to the WI-Fi. <br/>
 Integred conditional state for print Wi-fi and Ip Address of your device. <br/>
@@ -106,7 +106,7 @@ Integred conditional state for print Wi-fi and Ip Address of your device. <br/>
 
 ### ✔️ Validation:
 
-- Ping your device.  
+- Ping your device.
 If this step is ending you can go out to the next step. :tada:
 
 
@@ -119,7 +119,7 @@ If this step is ending you can go out to the next step. :tada:
 
 </details>
 
-### 📑 Description:  
+### 📑 Description:
 
 Now that you have an network to your esp32. <br/>
 This is the first step. <br/>
@@ -153,9 +153,9 @@ Now it's time to know how subscribes to a topic.
 
 > This information is necessary to communicate with the Broker :rocket:
 
-**Topic** : /Workshop/Hardware/MQTT  
-**Username** : MosquiFruit  
-**Password** : SendMeYourEmail  
+**Topic** : /Workshop/Hardware/MQTT
+**Username** : MosquiFruit
+**Password** : SendMeYourEmail
 
 - First step : Subscribe to all topics
 - Second step : Subscribe to specifique topic /Workshop/Hardware/MQTT
@@ -167,7 +167,7 @@ Now it's time to know how subscribes to a topic.
 - [Example Subscribe](https://projetsdiy.fr/mosquitto-broker-mqtt-raspberry-pi/)
 - [Mosquitto information](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/)
 
-### ✔️ Validation:  
+### ✔️ Validation:
 
 If your received message, you can jump to the task 06 :tada:
 
@@ -287,7 +287,7 @@ If you manage to connect to yours, go to the next step!
 Now that we have a BLE server, we will define a client to communicate with our ESP32.<br/>
 For this, we will use a mobile application: `Serial Bluetooth Terminal`.<br/>
 
-- Go to `Devices`. 
+- Go to `Devices`.
 - Click the settings icon, and select Pair new device.
 - Choose and pair with your BLE server.
 :blub: Make sure you’ve enable your smartphone’s Bluetooth.
@@ -330,7 +330,7 @@ Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur 
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * ESP32 - Breadboard - Jumpers
 * LED RGB
 * 3x Résistances
@@ -338,10 +338,10 @@ Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur 
 </details>
 
 #### 4.1.1 Piloter la LED
-Pour débuter notre programme, commencez par piloter votre LED RGB grâce à l'ESP32.  
+Pour débuter notre programme, commencez par piloter votre LED RGB grâce à l'ESP32.
 Pour cela vous allez devoir écrire dans le `Serial Monitor` la couleur souhaité sous cette forme: `r255g00b00&`. Vous comprendrez par la suite.
 
-> r pour red, g pour green, b pour blue  
+> r pour red, g pour green, b pour blue
 > Soit le nombre après chaque lettre compris entre 0 et 255 (un byte)
 
 Créer la fonction dont le header est ci-dessous:
@@ -366,12 +366,12 @@ String.substring();
 ```
 
 #### 4.1.2 Créer votre premier Access Point
-Vous devrez mettre l'ESP32 en `AP`. Et print l'address IP de votre carte.  
+Vous devrez mettre l'ESP32 en `AP`. Et print l'address IP de votre carte.
 Nommé votre réseau comme suit:
 ```
 RGB_votrePrenom
 ```
-Bien sûr votre code devra être dans la fonction `setup` de votre code.  
+Bien sûr votre code devra être dans la fonction `setup` de votre code.
 
 ```diff
 +Pour passer à la suite+
@@ -384,10 +384,10 @@ WiFi.h
 > ESP32 Useful Wi-Fi Library [Explication](https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/)
 
 #### 4.1.3 Web Server sur ESP32
-Maintenant il vous faudra créer un ***serveur sur le port 80*** de votre carte.  
-Par la suite il faudra créer votre client, qui vous permettra d'écrire l'`htlm` sur votre serveur.  
-Il faudra utiliser `color_picker.html` qui se trouve dans les `resouces/`.  
-La fonction permettant de mettre le code html sur votre serveur sera construit comme suit:  
+Maintenant il vous faudra créer un ***serveur sur le port 80*** de votre carte.
+Par la suite il faudra créer votre client, qui vous permettra d'écrire l'`htlm` sur votre serveur.
+Il faudra utiliser `color_picker.html` qui se trouve dans les `resouces/`.
+La fonction permettant de mettre le code html sur votre serveur sera construit comme suit:
 ```arduino
 void web_color_picker(WiFiClient client)
 ```
@@ -397,26 +397,26 @@ WiFi.h
 WiFiServer();
 WiFiClient();
 ```
-> Documentation [Create A Web Server](https://electropeak.com/learn/create-a-web-server-w-esp32/)  
-> Un code d'exemple vous devriez vite comprendre [ESP32 Web Server – Arduino IDE](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)  
+> Documentation [Create A Web Server](https://electropeak.com/learn/create-a-web-server-w-esp32/)
+> Un code d'exemple vous devriez vite comprendre [ESP32 Web Server – Arduino IDE](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
 > La documentation de [WiFi library](https://www.arduino.cc/en/Reference/WiFi)
->   
+>
 > :warning: Vous n'avez pas le droit à la lib <WebServer.h> :)
 
-Si vous avez bien géré votre loop vous pouvez vous connecter à votre ESP32 et aller sur votre `WebBrowser de téléphone` et tapez-y l'IP de votre Carte.  
-Vous devriez voir affiché:  
-![](../.github/day2/example_color_picker.png)  
+Si vous avez bien géré votre loop vous pouvez vous connecter à votre ESP32 et aller sur votre `WebBrowser de téléphone` et tapez-y l'IP de votre Carte.
+Vous devriez voir affiché:
+![](../.github/day2/example_color_picker.png)
 
 ### 4.2 - Among Us du RFC :detective:
 #### 4.2.1 Lancer l'API
 
-Le but de cet exercise sera d'envoyer des request http à une API ce trouvant dans les `resources/`.  
+Le but de cet exercise sera d'envoyer des request http à une API ce trouvant dans les `resources/`.
 Vous y retrouverez un `docker-compose.yml` il faudra donc avoir **docker** d'installé sur votre machine et d'effectuer la commande suivante:
 ```bash
 docker-compose up -d
 ```
 
-L'API tourne sur le `port 3000`. Pour avoir plus d'info sur l'API aller sur la route ***/about.json***.  
+L'API tourne sur le `port 3000`. Pour avoir plus d'info sur l'API aller sur la route ***/about.json***.
 
 http://localhost:3000/about.json
 
@@ -424,7 +424,7 @@ http://localhost:3000/about.json
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * ESP32 - Breadboard - Jumpers
 * 2x LED (Rouge/Vert)
 * 2x Résistances
@@ -432,9 +432,9 @@ http://localhost:3000/about.json
 
 </details>
 
-Connectez votre PC et votre ESP32 sur le même réseau.  
-Grâce au lecteur RFID et aux cartes et badges fournis le but sera de découvrir qui est l'imposteur.  
-Scannez les cartes et badges, s'il s'agit d'un imposteur allumez la LED rouge sinon la LED verte.  
+Connectez votre PC et votre ESP32 sur le même réseau.
+Grâce au lecteur RFID et aux cartes et badges fournis le but sera de découvrir qui est l'imposteur.
+Scannez les cartes et badges, s'il s'agit d'un imposteur allumez la LED rouge sinon la LED verte.
 
 ```diff
 !~ Tips ~!

@@ -2,14 +2,14 @@
 
 ## Arduino IDE
 
-Premièrement aller sur ce lien pour télécharger [Arduino IDE 1.8.15](https://www.arduino.cc/en/software).  
+Premièrement aller sur ce lien pour télécharger [Arduino IDE 1.8.15](https://www.arduino.cc/en/software).
 
 ### Linux
 
 Décompresser le fichier avec la commande:
 ```bash
 tar -xvf tonDossier.tar.xz
-```  
+```
 Entrez dans le dossier `arduino-1.8.x`. Et lancez le script install.
 ```bash
 ./install.sh

@@ -10,50 +10,50 @@
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * Arduino - Breadboard - Jumpers
 * 4x LED (de préférence: Rouge, Bleu, Vert, Jaune)
 * 4x Résistance
-* 4x Boutton
+* 4x Bouton
 
 </details>
 
-Vous connaisez tous le jeu [Simon](https://www.youtube.com/watch?v=1Yqj76Q4jJ4) ? Et bien vous allez devoir en recréer un, vous retrouverez tous ce dont vous aurez besoin dans *"🛠️ Matériel requis:"*.  
+Vous connaissez tous le jeu [Simon](https://www.youtube.com/watch?v=1Yqj76Q4jJ4) ? Et bien vous allez devoir en recréer un, vous retrouverez tous ce dont vous aurez besoin dans *"🛠️ Matériel requis:"*.
 
-### LED et Boutton
+### LED et Bouton
 
-Commencez par mettre vos LED et Boutton sur la BreadBoard.  
-Chaque Boutton correspondra à une couleur de LED.  
+Commencez par mettre vos LED et Boutons sur la BreadBoard.
+Chaque bouton correspondra à une couleur de LED.
 
-> Par exemple: Boutton Rouge => LED Rouge
+> Par exemple: Bouton Rouge => LED Rouge
 
 ```diff
 +Pour passer à la suite+
-Faite en sorte qu'en appuyant sur un boutton sa LED associé s'allume.
+Faite en sorte qu'en appuyant sur un bouton sa LED associé s'allume.
 ```
 
 ### The Game
 
 Maintenant que vous avez le circuit, il faudra coder !
 
-Faite clignoter les LED, pour commencer le jeu il faudra appuyer sur n'importe quel boutton.
+Faite clignoter les LED, pour commencer le jeu il faudra appuyer sur n'importe quel bouton.
 
-Le jeu s'alternera entre les couleurs à mémoriser et les coups à jouer.  
+Le jeu s'alternera entre les couleurs à mémoriser et les coups à jouer.
 
-A chaque nouveau tour une couleur aléatoire sera ajouter à la séquence précédente.  
+A chaque nouveau tour une couleur aléatoire sera ajouter à la séquence précédente.
 
-Il faudra avoir une suite consécutive de `12 coups` pour gagner le jeu.  
+Il faudra avoir une suite consécutive de `12 coups` pour gagner le jeu.
 
-Si le joueur prend plus de `3 secondes` pour appuyer sur un boutton il a perdu.
+Si le joueur prend plus de `3 secondes` pour appuyer sur un bouton il a perdu.
 
-> Choisissez votre combinaison vainqueur et perdant.  
+> Choisissez votre combinaison vainqueur et perdant.
 > ex: faire clignoter 3 fois la LED rouge pour perdant.
 
 ## Calculator
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * Arduino - Breadboard - Jumpers
 * Potentiomètre
 * Display 16x2
@@ -76,13 +76,13 @@ Pour définir les opérateurs dans notre keypad, nous allons partir de se postul
 - D : '-'
 
 Il est maintenant temps de combiner vos opérateurs et vos chiffres.
-Quand vous appuyez sur la touche "*", votre écran affiche "=" suivi du résultat. 
+Quand vous appuyez sur la touche "*", votre écran affiche "=" suivi du résultat.
 
 ## Snake
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * Arduino - Breadboard - Jumpers
 * Potentiomètre 10k
 * 8x8 Matrix display
@@ -95,7 +95,7 @@ Vous allez tout d'abord connecté votre matrice à votre Arduino Uno.
 Ajouté la [bibliothèque](https://github.com/wayoda/LedControl) pour allumer des leds sur votre matrice.
 Faite en sorte d'avoir un pixel qui s'affiche aléatoirement toutes les secondes.
 
-Vous allez ensuite connecté votre joystick sur votre arduino et faire avancé 2 pixels simultanément et les mouvoirs avec votre joystick.
+Vous allez ensuite connecté votre joystick sur votre arduino et faire avancé 2 pixels simultanément et les mouvoir avec votre joystick.
 Ajouter un potentiomètre pour contrôler la vitesse de vos affichage.
 
 Vous avez maintenant toutes les étapes pour finir cette exercice.
@@ -109,7 +109,7 @@ Après avoir afficher "END", si le joystick bouge votre serpent reprend la posit
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * Arduino - Breadboard - Jumpers
 * 2x Resistances
 * 2x LED (red and green)
@@ -123,18 +123,18 @@ Si son contenu est correct une led Verte s'allume.
 Sinon une led rouge s'allume accompagné d'un bruit émis par le buzzer.
 
 Vous allez tout d'abord connecter votre lecteur RFID à votre Arduino.
-Ecrivez un programme vous permettant de lire le contenu d'un carte en RFID.
+Écrivez un programme vous permettant de lire le contenu d'un carte en RFID.
 Maintenant, il vous reste plus cas allumer la LED rouge ou vert quand une carte est lu.
-La couleur de la LED correspond à la comparaison entre le contenu de la carte est d'une valeur de référence.
+La couleur de la LED correspond à la comparaison entre le contenu de la carte et d'une valeur de référence.
 
-> :warning: N'oubliez pas d'utilisez des resistances pour vos LED.
+> :warning: N'oubliez pas d'utiliser des résistances pour vos LED.
 
 
 ## Shi Fu Mi
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
- 
+
 * Arduino - Breadboard - Jumpers
 * 3x servo
 * Ultrasonic sensor
@@ -145,7 +145,7 @@ La couleur de la LED correspond à la comparaison entre le contenu de la carte e
 Cette exercice consiste à créer un Shi Fu Mi.
 Chaque servo-moteurs correspond à une action (Shi, Fu, Mi).
 Le capteur Ultrasonic permet d'évaluer si un geste de la part de l'adversaire a été perçu.
-Le Buzzer émets un son quand l'action est executé.
+Le Buzzer émets un son quand l'action est exécutée.
 
 La première partie consiste à connecter votre capteur ultrasonic quand un objet entre dans une zone de 30 cm.
 Ajouter le buzzer, il doit émettre un bruit tant qu'un objet est dans la zone.

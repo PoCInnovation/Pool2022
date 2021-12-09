@@ -15,7 +15,7 @@ Faire une boite avec des poignées.
 
 ![box](img/box.png)
 
-Faire un stand de telephone.
+Faire un stand de téléphone.
 
 ![cellStand](img/cellStand.png)
 

@@ -31,9 +31,9 @@ Vous commencerez le day avec:
 
 ### A - Lecture basique
 
-Assurez-vous que votre Arduino est bien connecté et que les branchements de votre carte RFID sont valides. Pour être sûre que tout fonctionne vous pouvez dumper les informations de votre carte RFID à l'écran.
+Assurez vous que votre Arduino est bien connecté et que les branchements de votre carte RFID sont valides. Pour être sûre que tout fonctionne vous pouvez dumper les informations de votre carte RFID à l'écran.
 
-Prenez la première carte que nous vous avons fournie et scannez-la avec votre carte RFID pour afficher son contenu.
+Prenez la première carte que nous vous avons fournie et scanner la avec votre carte RFID pour afficher son contenu.
 
 L'objectif est de retrouver le flag PoC dans la data que vous lisez. Il est sous cette forme : `PoC{FLAG}`.
 

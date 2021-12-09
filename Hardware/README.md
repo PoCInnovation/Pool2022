@@ -2,19 +2,19 @@
 
 Pendant une semaine, vous allez pouvoir découvrir plusieurs facettes de l'hardware: de la communication entre les modules/sensor, concept plus pousser comme l'iot, les protocoles de communication. :rocket:
 
-Vous aurez, à l'issue de cette piscine, toutes les clefs en main pour démarrer n'importe quels projets de bas niveau.  
+Vous aurez, à l'issue de cette piscine, toutes les clefs en main pour démarrer n'importe quels projets de bas niveau.
 
-La piscine se découpe en 2 parties : une formation et une mise en application des connaissances.  
+La piscine se découpe en 2 parties : une formation et une mise en application des connaissances.
 
-La formation se déroule en 5 jours, chacun portera sur un thème de l'hardware et sera encadrés par des étudiants ayant de grandes connaissances dans ces domaines. Des talks quotidiens sont également aux programmes pour éclaircir les notions les plus complexes et apporter des connaissances annexes très importantes.  
+La formation se déroule en 5 jours, chacun portera sur un thème de l'hardware et sera encadrés par des étudiants ayant de grandes connaissances dans ces domaines. Des talks quotidiens sont également aux programmes pour éclaircir les notions les plus complexes et apporter des connaissances annexes très importantes.
 
-Des intervenants extérieurs viendront aussi apporter leur expériences du domaine et expliquer les grands axes du développment dans une entreprise.  
+Des intervenants extérieurs viendront aussi apporter leur expériences du domaine et expliquer les grands axes du développent dans une entreprise.
 
 ## [Day 1 - Les fondamentaux et BAS](Day01/README.md)
 
-**BAS:** Building Automation System  
+**BAS:** Building Automation System
 
-Vous découvrirez le fonctionnement des circuits électriques et de vos premières cartes arduino.  
+Vous découvrirez le fonctionnement des circuits électriques et de vos premières cartes arduino.
 
 Talk:
 - L'Arduino c'est quoi ?
@@ -29,22 +29,22 @@ Talk:
 
 ## [Day 3 - PCB et CAD/CAO]()
 
-**PCB:** Printed Circuit Board  
-**CAD:** Computer Aided Design  
-**CAO:** Conception Assistée par Ordinateur  
+**PCB:** Printed Circuit Board
+**CAD:** Computer Aided Design
+**CAO:** Conception Assistée par Ordinateur
 
-~Description~  
+~Description~
 Talk:
 - 1
 
 ## [Day 4 - Le réseaux]()
-~Description~  
+~Description~
 Talk:
-- 1  
+- 1
 
 ## [Day 5 - La sécurité]()
-~Description~  
+~Description~
 Talk:
-- 1  
+- 1
 
 ## Authors:
