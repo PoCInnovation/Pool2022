@@ -8,26 +8,26 @@
     - [1.2 - Lecture des messages dans le moniteur](#12---lecture-des-messages-dans-le-moniteur)
     - [1.3 - Executer des calcules](#13---executer-des-calcules)
     - [Graph Météo :sunny:](#graph-météo-sunny)
-  - [2 - MQTT](#2---mqtt)
-    - [2.1 - Connect to Wi-Fi](#21---connect-to-wi-fi)
-    - [2.2 - SetUp Mosquitto](#22---setup-mosquitto)
-    - [2.3 - SetUp your first Subscribe to Mosquitto](#23---setup-your-first-subscribe-to-mosquitto)
-    - [2.4 - Publish with Mosquitto](#24---publish-with-mosquitto)
-    - [2.5 - Set MQTT with your esp32](#25---set-mqtt-with-your-esp32)
-    - [2.6 - Create your Broker](#26---create-your-broker)
+  - [2 - Bluetooth](#3---bluetooth)
+    - [2.1 - Create Server BLE](#31---create-server-ble)
+    - [2.2 - Set Client with your phone](#32---set-client-with-your-phone)
+    - [2.3 - Scan BLE](#33---scan-cle)
+  - [3 - WiFi](#4---wifi)
+    - [3.1 - Color Picker :syringe:](#41---color-picker-syringe)
+      - [3.1.1 Piloter la LED](#411-piloter-la-led)
+      - [3.1.2 Créer votre premier Access Point](#412-créer-votre-premier-access-point)
+      - [3.1.3 Web Server sur ESP32](#413-web-server-sur-esp32)
+    - [3.2 - Among Us du RFC :detective:](#among-us-du-rfc-detective)
+      - [3.2.1 Lancer l'API](#421-lancer-lapi)
+      - [3.2.2 Trouver les imposteurs](#422-trouver-les-imposteurs)
+  - [4 - MQTT](#2---mqtt)
+    - [4.1 - Connect to Wi-Fi](#21---connect-to-wi-fi)
+    - [4.2 - SetUp Mosquitto](#22---setup-mosquitto)
+    - [4.3 - SetUp your first Subscribe to Mosquitto](#23---setup-your-first-subscribe-to-mosquitto)
+    - [4.4 - Publish with Mosquitto](#24---publish-with-mosquitto)
+    - [4.5 - Set MQTT with your esp32](#25---set-mqtt-with-your-esp32)
+    - [4.6 - Create your Broker](#26---create-your-broker)
     - [IFTT turn on LED with your vocal assistant ! :speaking_head:](#iftt-turn-on-led-with-your-vocal-assistant--speaking_head)
-  - [3 - Bluetooth](#3---bluetooth)
-    - [3.1 - Create Server BLE](#31---create-server-ble)
-    - [3.2 - Set Client with your phone](#32---set-client-with-your-phone)
-    - [3.3 - Scan BLE](#33---scan-cle)
-  - [4 - WiFi](#4---wifi)
-    - [4.1 - Color Picker :syringe:](#41---color-picker-syringe)
-      - [4.1.1 Piloter la LED](#411-piloter-la-led)
-      - [4.1.2 Créer votre premier Access Point](#412-créer-votre-premier-access-point)
-      - [4.1.3 Web Server sur ESP32](#413-web-server-sur-esp32)
-    - [4.2 - Among Us du RFC :detective:](#among-us-du-rfc-detective)
-      - [4.2.1 Lancer l'API](#421-lancer-lapi)
-      - [4.2.2 Trouver les imposteurs](#422-trouver-les-imposteurs)
 
 ## Introduction
 
@@ -76,9 +76,196 @@ Une fois le calcul fait, renvoyer la valeur.
 
 ### Graph Météo :sunny:
 
-## 2 - MQTT
+## 2 - Bluetooth
+Le BLE signifie Bluetooth Low Energy.
+
+### 2.1 - Create Server BLE
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+We will create a Bluetooth server with our ESP32.
+
+> * Create your local bluetooth and set `BLE ESP32 - [YourName]` as local server name.
+
+To verify that your server is created, take your phone and look at the Bluetooth networks.
+If you manage to connect to yours, go to the next step!
+
+### 📚 Documentation:
+- [BLE Server](http://www.neilkolban.com/esp32/docs/cpp_utils/html/class_b_l_e_server.html)
+
+### 2.2 - Set Client with your phone
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+Now that we have a BLE server, we will define a client to communicate with our ESP32.<br/>
+For this, we will use a mobile application: `Serial Bluetooth Terminal`.<br/>
+
+- Go to `Devices`.
+- Click the settings icon, and select Pair new device.
+- Choose and pair with your BLE server.
+:blub: Make sure you’ve enable your smartphone’s Bluetooth.
+- Go back to the `Serial Bluetooth Terminal`.
+- Click the icon at the top to connect to the BLE server.
+
+You should get a `Connected` message.
+
+:blub: You can send message between your monitor and `Serial Bluetooth Terminal` !
+
+Let's continue to the next step!
+
+### 2.3 - Scan BLE
+<details>
+    <summary> 🛠️ Required Hardware:</summary>
+
+- ESP32
+- USB cable
+
+</details>
+
+We will now create a bluetooth scanner with a second ESP32.
+
+:blub: `#include <BLEScan.h>`, `#include <BLEAdvertisedDevice.h>` <br/>
+> :warning: Be careful to upload one code at a time on each board. <br/>
+
+If you find the name of your BLE server in the monitor of your scanner, you have succeeded!
+
+### 📚 Documentation:
+- [Scan BLE](http://www.neilkolban.com/esp32/docs/cpp_utils/html/class_b_l_e_scan.html)
+
+## :tada: Congratulation !
+
+You now know the basics of BLE ESP32.<br/>
+
+## 3 - Wifi
+### 3.1 - Color Picker :syringe:
+
+Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur d'une LED RGB
+
+<details>
+    <summary> 🛠️ Matériel requis:</summary>
+
+* ESP32 - Breadboard - Jumpers
+* LED RGB
+* 3x Résistances
+
+</details>
+
+#### 3.1.1 Piloter la LED
+Pour débuter notre programme, commencez par piloter votre LED RGB grâce à l'ESP32.
+Pour cela vous allez devoir écrire dans le `Serial Monitor` la couleur souhaité sous cette forme: `r255g00b00&`. Vous comprendrez par la suite.
+
+> r pour red, g pour green, b pour blue
+> Soit le nombre après chaque lettre compris entre 0 et 255 (un byte)
+
+Créer la fonction dont le header est ci-dessous:
+```arduino
+void change_led_color(String header)
+```
+
+```diff
++Pour passer à la suite envoyé ses lignes+
+r255g0b0& # rouge
+r0g255b0& # vert
+r0g0b255& # bleu
+```
+```diff
+!~ Tips ~!
+ledcSetup();
+ledcAttachPin();
+
+String.indexOf();
+String.substring();
+@@ ok @@
+```
+
+#### 3.1.2 Créer votre premier Access Point
+Vous devrez mettre l'ESP32 en `AP`. Et print l'address IP de votre carte.
+Nommé votre réseau comme suit:
+```
+RGB_votrePrenom
+```
+Bien sûr votre code devra être dans la fonction `setup` de votre code.
+
+```diff
++Pour passer à la suite+
+Aller dans les réglages WiFi de votre téléphone et regardé si votre Access Point y est.
+```
+```diff
+!~ Tips ~!
+WiFi.h
+```
+> ESP32 Useful Wi-Fi Library [Explication](https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/)
+
+#### 3.1.3 Web Server sur ESP32
+Maintenant il vous faudra créer un ***serveur sur le port 80*** de votre carte.
+Par la suite il faudra créer votre client, qui vous permettra d'écrire l'`htlm` sur votre serveur.
+Il faudra utiliser `color_picker.html` qui se trouve dans les `resouces/`.
+La fonction permettant de mettre le code html sur votre serveur sera construit comme suit:
+```arduino
+void web_color_picker(WiFiClient client)
+```
+```diff
+!~ Tips ~!
+WiFi.h
+WiFiServer();
+WiFiClient();
+```
+> Documentation [Create A Web Server](https://electropeak.com/learn/create-a-web-server-w-esp32/)
+> Un code d'exemple vous devriez vite comprendre [ESP32 Web Server – Arduino IDE](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
+> La documentation de [WiFi library](https://www.arduino.cc/en/Reference/WiFi)
+>
+> :warning: Vous n'avez pas le droit à la lib <WebServer.h> :)
+
+Si vous avez bien géré votre loop vous pouvez vous connecter à votre ESP32 et aller sur votre `WebBrowser de téléphone` et tapez-y l'IP de votre Carte.
+Vous devriez voir affiché:
+![](../.github/day2/example_color_picker.png)
+
+### 3.2 - Among Us du RFC :detective:
+#### 3.2.1 Lancer l'API
+
+Le but de cet exercise sera d'envoyer des request http à une API ce trouvant dans les `resources/`.
+Vous y retrouverez un `docker-compose.yml` il faudra donc avoir **docker** d'installé sur votre machine et d'effectuer la commande suivante:
+```bash
+docker-compose up -d
+```
+
+L'API tourne sur le `port 3000`. Pour avoir plus d'info sur l'API aller sur la route ***/about.json***.
+
+http://localhost:3000/about.json
+
+#### 3.2.2 Trouver les imposteurs
+
+<details>
+    <summary> 🛠️ Matériel requis:</summary>
+
+* ESP32 - Breadboard - Jumpers
+* 2x LED (Rouge/Vert)
+* 2x Résistances
+* Lecteur RFID-RC522
+
+</details>
+
+Connectez votre PC et votre ESP32 sur le même réseau.
+Grâce au lecteur RFID et aux cartes et badges fournis le but sera de découvrir qui est l'imposteur.
+Scannez les cartes et badges, s'il s'agit d'un imposteur allumez la LED rouge sinon la LED verte.
+
+```diff
+!~ Tips ~!
+HTTPClient.h
+```
+## 4 - MQTT
 Le MQTT est un protocole permettant de connecté plusieurs objets utilisant des technologies différentes.
-### 2.1 - Connect to Wi-Fi
+### 4.1 - Connect to Wi-Fi
 <details>
     <summary> 🛠️ Required Hardware:</summary>
 
@@ -110,7 +297,7 @@ Integred conditional state for print Wi-fi and Ip Address of your device. <br/>
 If this step is ending you can go out to the next step. :tada:
 
 
-## 2.2 - SetUp Mosquitto
+## 4.2 - SetUp Mosquitto
 
 <details>
     <summary> 🛠️ Required Hardware:</summary>
@@ -136,7 +323,7 @@ Then you must understand and work MQTT IoT. <br/>
 - [Download Mosquitto](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/)
 - [Broker MQTT](https://www.journaldunet.fr/web-tech/dictionnaire-de-l-iot/1440686-mqtt-comment-fonctionne-ce-protocole/)
 
-## 2.3 - SetUp your first Subscribe to Mosquitto
+## 4.3 - SetUp your first Subscribe to Mosquitto
 
 <details>
     <summary> 🛠️ Required Hardware:</summary>
@@ -172,7 +359,7 @@ Now it's time to know how subscribes to a topic.
 If your received message, you can jump to the task 06 :tada:
 
 
-## 2.4 - Publish with Mosquitto
+## 4.4 - Publish with Mosquitto
 
 <details>
     <summary> 🛠️ Required Hardware:</summary>
@@ -192,7 +379,7 @@ Let's continue to the next step! :clap:
 - [Example Pusblish](https://projetsdiy.fr/mosquitto-broker-mqtt-raspberry-pi/)
 - [Mosquitto information](https://everythingsmarthome.co.uk/howto/how-to-install-an-mqtt-broker-mosquitto-install-config-on-debian-ubuntu-mint-fedora-raspbian/)
 
-## 2.5 - Set MQTT with your esp32
+## 4.5 - Set MQTT with your esp32
 
 <details>
     <summary> 🛠️ Required Hardware:</summary>
@@ -222,7 +409,7 @@ You can pass to the last step of this Workshop !
 - [Code example](https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/)
 - [Other example](https://www.emqx.com/en/blog/esp32-connects-to-the-free-public-mqtt-broker)
 
-## 2.6 - Create your Broker
+## 4.6 - Create your Broker
 
 <details>
     <summary> 🛠️ Required Hardware:</summary>
@@ -252,191 +439,3 @@ Your job if you accept it is :
 
 ## :tada: Congratulation !
 ### IFTT turn on LED with your vocal assistant ! :speaking_head:
-
-## 3 - Bluetooth
-Le BLE signifie Bluetooth Low Energy.
-
-### 3.1 - Create Server BLE
-<details>
-    <summary> 🛠️ Required Hardware:</summary>
-
-- ESP32
-- USB cable
-
-</details>
-
-We will create a Bluetooth server with our ESP32.
-
-> * Create your local bluetooth and set `BLE ESP32 - [YourName]` as local server name.
-
-To verify that your server is created, take your phone and look at the Bluetooth networks.
-If you manage to connect to yours, go to the next step!
-
-### 📚 Documentation:
-- [BLE Server](http://www.neilkolban.com/esp32/docs/cpp_utils/html/class_b_l_e_server.html)
-
-### 3.2 - Set Client with your phone
-<details>
-    <summary> 🛠️ Required Hardware:</summary>
-
-- ESP32
-- USB cable
-
-</details>
-
-Now that we have a BLE server, we will define a client to communicate with our ESP32.<br/>
-For this, we will use a mobile application: `Serial Bluetooth Terminal`.<br/>
-
-- Go to `Devices`.
-- Click the settings icon, and select Pair new device.
-- Choose and pair with your BLE server.
-:blub: Make sure you’ve enable your smartphone’s Bluetooth.
-- Go back to the `Serial Bluetooth Terminal`.
-- Click the icon at the top to connect to the BLE server.
-
-You should get a `Connected` message.
-
-:blub: You can send message between your monitor and `Serial Bluetooth Terminal` !
-
-Let's continue to the next step!
-
-### 3.3 - Scan BLE
-<details>
-    <summary> 🛠️ Required Hardware:</summary>
-
-- ESP32
-- USB cable
-
-</details>
-
-We will now create a bluetooth scanner with a second ESP32.
-
-:blub: `#include <BLEScan.h>`, `#include <BLEAdvertisedDevice.h>` <br/>
-> :warning: Be careful to upload one code at a time on each board. <br/>
-
-If you find the name of your BLE server in the monitor of your scanner, you have succeeded!
-
-### 📚 Documentation:
-- [Scan BLE](http://www.neilkolban.com/esp32/docs/cpp_utils/html/class_b_l_e_scan.html)
-
-## :tada: Congratulation !
-
-You now know the basics of BLE ESP32.<br/>
-
-## 4 - Wifi
-### 4.1 - Color Picker :syringe:
-
-Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur d'une LED RGB
-
-<details>
-    <summary> 🛠️ Matériel requis:</summary>
-
-* ESP32 - Breadboard - Jumpers
-* LED RGB
-* 3x Résistances
-
-</details>
-
-#### 4.1.1 Piloter la LED
-Pour débuter notre programme, commencez par piloter votre LED RGB grâce à l'ESP32.
-Pour cela vous allez devoir écrire dans le `Serial Monitor` la couleur souhaité sous cette forme: `r255g00b00&`. Vous comprendrez par la suite.
-
-> r pour red, g pour green, b pour blue
-> Soit le nombre après chaque lettre compris entre 0 et 255 (un byte)
-
-Créer la fonction dont le header est ci-dessous:
-```arduino
-void change_led_color(String header)
-```
-
-```diff
-+Pour passer à la suite envoyé ses lignes+
-r255g0b0& # rouge
-r0g255b0& # vert
-r0g0b255& # bleu
-```
-```diff
-!~ Tips ~!
-ledcSetup();
-ledcAttachPin();
-
-String.indexOf();
-String.substring();
-@@ ok @@
-```
-
-#### 4.1.2 Créer votre premier Access Point
-Vous devrez mettre l'ESP32 en `AP`. Et print l'address IP de votre carte.
-Nommé votre réseau comme suit:
-```
-RGB_votrePrenom
-```
-Bien sûr votre code devra être dans la fonction `setup` de votre code.
-
-```diff
-+Pour passer à la suite+
-Aller dans les réglages WiFi de votre téléphone et regardé si votre Access Point y est.
-```
-```diff
-!~ Tips ~!
-WiFi.h
-```
-> ESP32 Useful Wi-Fi Library [Explication](https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/)
-
-#### 4.1.3 Web Server sur ESP32
-Maintenant il vous faudra créer un ***serveur sur le port 80*** de votre carte.
-Par la suite il faudra créer votre client, qui vous permettra d'écrire l'`htlm` sur votre serveur.
-Il faudra utiliser `color_picker.html` qui se trouve dans les `resouces/`.
-La fonction permettant de mettre le code html sur votre serveur sera construit comme suit:
-```arduino
-void web_color_picker(WiFiClient client)
-```
-```diff
-!~ Tips ~!
-WiFi.h
-WiFiServer();
-WiFiClient();
-```
-> Documentation [Create A Web Server](https://electropeak.com/learn/create-a-web-server-w-esp32/)
-> Un code d'exemple vous devriez vite comprendre [ESP32 Web Server – Arduino IDE](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
-> La documentation de [WiFi library](https://www.arduino.cc/en/Reference/WiFi)
->
-> :warning: Vous n'avez pas le droit à la lib <WebServer.h> :)
-
-Si vous avez bien géré votre loop vous pouvez vous connecter à votre ESP32 et aller sur votre `WebBrowser de téléphone` et tapez-y l'IP de votre Carte.
-Vous devriez voir affiché:
-![](../.github/day2/example_color_picker.png)
-
-### 4.2 - Among Us du RFC :detective:
-#### 4.2.1 Lancer l'API
-
-Le but de cet exercise sera d'envoyer des request http à une API ce trouvant dans les `resources/`.
-Vous y retrouverez un `docker-compose.yml` il faudra donc avoir **docker** d'installé sur votre machine et d'effectuer la commande suivante:
-```bash
-docker-compose up -d
-```
-
-L'API tourne sur le `port 3000`. Pour avoir plus d'info sur l'API aller sur la route ***/about.json***.
-
-http://localhost:3000/about.json
-
-#### 4.2.2 Trouver les imposteurs
-
-<details>
-    <summary> 🛠️ Matériel requis:</summary>
-
-* ESP32 - Breadboard - Jumpers
-* 2x LED (Rouge/Vert)
-* 2x Résistances
-* Lecteur RFID-RC522
-
-</details>
-
-Connectez votre PC et votre ESP32 sur le même réseau.
-Grâce au lecteur RFID et aux cartes et badges fournis le but sera de découvrir qui est l'imposteur.
-Scannez les cartes et badges, s'il s'agit d'un imposteur allumez la LED rouge sinon la LED verte.
-
-```diff
-!~ Tips ~!
-HTTPClient.h
-```
