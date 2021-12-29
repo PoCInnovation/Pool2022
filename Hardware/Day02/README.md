@@ -4,10 +4,9 @@
   - [Introduction](#introduction)
   - [0 - Setup](#0---setup)
   - [1 - USB](#1---usb)
-    - [1.1 - Fréquence de transmission](#11---fréquence-de-transmission)
-    - [1.2 - Lecture des messages dans le moniteur](#12---lecture-des-messages-dans-le-moniteur)
-    - [1.3 - Executer des calcules](#13---executer-des-calcules)
-    - [Graph Météo :sunny:](#graph-météo-sunny)
+    - [1.1 - Transmission's Frequencies](#11---transmission's-frequencies)
+    - [1.2 - Reading messages in the monitor](#12---reading-messages-in-the-monitor)
+    - [1.3 - Performing calculations](#13---performing-calculations)
   - [2 - Bluetooth](#2---bluetooth)
     - [2.1 - Create Server BLE](#21---create-server-ble)
     - [2.2 - Set Client with your phone](#22---set-client-with-your-phone)
@@ -50,31 +49,29 @@ Et le plus important vous allez avoir une brève approche à l'`IOT` (Internet O
 
 ## 1 - USB
 
-Nous allons établir une connexion Serial entre notre PC et notre micro-processeur.
-Pour vous permettre la communication nous allons utiliser le moniteur série.
+We will  establish a serial connection between our pc and our microprocessor.
+To enable communication we will use the serial monitor.
 
-### 1.1 - Fréquence de transmission
-Dans votre partie setup vous allez réglez votre transmission à 9600 baud.
-Ensuite toujours dans votre setup affichez *Hello World*.
+### 1.1 - Transmission's Frequencies
+In your setup you will set your transmission to 9600 baud.
+Then still in your setup display *Hello World*.
 
-Il ne vous reste plus qu'à ouvrir votre Moniteur série sur 9600 baud et voir votre message.
+You just have to open your serial monitor on 9600 baud to see your message.
 
-### 1.2 - Lecture des messages dans le moniteur
+### 1.2 - Reading messages in the monitor
 
-Maintenant que vous avez appris à écrire des messages, il est temps de lire les messages reçu par le biais de l'input de votre moniteur.
+Now that you have learned how to write messages, it is time to read the messages received through the input of your monitor.
 
-Écrivez une condition dans votre loop pour vérifier qu'un message est reçu et afficher le. :muscle:
+Write a condition in your loop to check that a message is received and then display it. :muscle:
 
-### 1.3 - Executer des calcules
+### 1.3 - Performing calculations
 
-Nous savons récupérer les messages, les écrire nous allons maintenant stocker les valeurs reçus pour effectuer un calcul.
+We know how to retrieve messages and how to write them, now we will store the received values to perform a calculation.
 
-Créer une fonction qui récupère deux valeurs en input et les additionnes. :heavy_plus_sign:
-Une fois le calcul fait, renvoyer la valeur.
+Create a function that retrieves two input values and adds them together. :heavy_plus_sign:
+Once the calculation is done, return the value.
 
-> :stuck_out_tongue_winking_eye: N'oubliez pas de vérifiez que le éléments sont bien des nombres.
-
-### Graph Météo :sunny:
+> :stuck_out_tongue_winking_eye: Don't forget to check that the variable are numbers.
 
 ## 2 - Bluetooth
 Le BLE signifie Bluetooth Low Energy.
