@@ -37,7 +37,7 @@ Prenez la première carte que nous vous avons fournie et scanner la avec votre c
 
 L'objectif est de retrouver le flag PoC dans la data que vous lisez. Il est sous cette forme : `PoC{FLAG}`.
 
-### B - Chiffrement débutant
+### B - Déchiffrement débutant
 
 Votre prochaine étape est de déchiffrer une carte que vous devez demander à un encadrant.
 
@@ -47,7 +47,7 @@ Il existe de très nombreux algorithmes permettant de chiffrer des données, pou
 L'objectif est de trouver la clé de chiffrement utilisé pour le chiffrement des données de cette carte.
 Pour cet exercice ainsi que tous les autres exercices comprenant un chiffrement la longueur de la clé est de sept caractères.
 
-### C - Chiffrement basique
+### C - Déchiffrement basique
 
 Pour cet exercice, vous devez de nouveau déchiffrer une carte.
 
@@ -58,12 +58,12 @@ L'objectif est de trouver la clé de chiffrement utilisé pour le chiffrement de
 ## 2 - Écriture de carte
 ### A - Écriture débutant
 
-Vous allez devoir lire une carte et réécrire est contenu pour changer la variable CODE de `PoK` à `PoC`.
+Vous allez devoir lire une carte et réécrire son contenu pour changer la variable CODE de `PoK` à `PoC`.
 
 Une fois réussie vous devrez demander à un encadrant de scanner votre carte pour valider cette tâche.
 
 ### B - Écriture basique
 
-La carte que vous avez reçue est offusquée, vous allez devoir écrire un programme capable de supprimer tout le code inutile sur votre carte pour la rendre utilisable.
+La carte que vous avez reçue est obfusquée, vous allez devoir écrire un programme capable de supprimer tout le code inutile sur votre carte pour la rendre utilisable.
 
 La validation de cette tâche s'effectuera de la même façon que pour la tâche précédente.
