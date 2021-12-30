@@ -1,38 +1,41 @@
-# Piscine Hardware : Journée Modélisation 3D !
+# Hardware Pool : 3D modelling
 
-## exercice 1: Les bases
- Faire un cube de 57.58mm d'arête (Attention, on viendra vérifier la taille !).
+## exercise 1: First things first : the basics
+
+Make a cube of 57.58mm side (Careful, we'll come and check the measurements !)
 
 ![cube](img/cube.png)
 
-Faire une sphère.
+Make a sphere.
 
 ![sphere](img/sphere.png)
 
-## Exercice 2: Un peu plus technique
+## Exercise 2: Let's get technical
 
-Faire une boite avec des poignées.
+Make a box with handles.
 
 ![box](img/box.png)
 
-Faire un stand de téléphone.
+Make a telephone stand.
 
 ![cellStand](img/cellStand.png)
 
-Faire un vase.
+Make a vase
 
 ![vase](img/vase.png)
-## Exercice 3: Le mouvement 
 
-Faire une boite avec un couvercle coulissant.
+## Exercise 3: Movement
+
+Make a box with a sliding top
 
 ![slideyBox](img/slideyBox.png)
 
-## Exercice 4: Plus vrai que nature
-Faire un servomoteur simplifié.
+## Exercise 4: Realer than real
+
+Make a servomotor. Nothing too fancy, but try to get as close as you can to the model.
 
 ![servo](img/servo.png)
 
-## Exercice 5: 
+## Exercise 5:
 
-> Pour cet exercice, vous allez pouvoir modéliser une voiture, une fusée, ou même une montre à gousset si ça vous chante. Le principal, c'est qu'il faut que ce soit imprimable et **sous** 10cm³ pour que vous puissiez repartir avec !
+> For this exercise, You'll need to make a car, a rocket, or even a pocket watch if that's what floats your boat. The important thing is that it needs to be printable and **under** 10cm³, to make sure you'll be leaving with it.
