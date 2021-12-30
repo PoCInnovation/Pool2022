@@ -1,4 +1,4 @@
-# :wave: Welcome to hardware 2022 de PoC !
+# :wave: Welcome to hardware Pool 2022 of PoC !
 
 During one week, you will be able to discover several facets of the hardware: from the communication between modules/sensors, more advanced concepts like iot, communication protocols. :rocket:
 
