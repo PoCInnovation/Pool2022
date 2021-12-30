@@ -1,33 +1,38 @@
-# PoC Hardware, Day1 Matin
+# PoC Hardware, Day1 Morning
 
-## Sommaire
+## Summary
+  - [Summary](#summary)
   - [Introduction](#introduction)
   - [0 - Setup](#0---setup)
-  - [1 - Les bases électriques :zap:](#1---les-bases-électriques-zap)
-    - [1.1 - La théorie](#11---la-théorie)
-    - [1.2 - La visualisation](#12---la-visualisation)
-  - [2 - L'électronique :cyclone:](#2---lélectronique-cyclone)
-    - [2.1 La carte Arduino](#21-la-carte-arduino)
-    - [2.2 Vos premiers pas](#22-vos-premiers-pas)
+  - [1 - Electrical basics :zap:](#1---electrical-basics-zap)
+    - [1.1 - The theory](#11---the-theory)
+    - [1.2 - Visualization](#12---visualization)
+  - [2 - Electronics :cyclone:](#2---electronics-cyclone)
+    - [2.1 The Arduino board](#21-the-arduino-board)
+    - [2.2 Your first steps](#22-your-first-steps)
       - [2.2.1 No code, just volts](#221-no-code-just-volts)
-    - [2.3 Les données](#23-les-données)
-      - [2.3.1 Digital](#231-digital)
-        - [2.3.1.1 Blinking](#2311-blinking)
-        - [2.3.1.2 Un simple bouton](#2312-un-simple-bouton)
-      - [2.3.2 Analog](#232-analog)
-        - [2.3.2.1 LED's time blinking](#2321-leds-time-blinking)
-        - [2.3.2.2 Fading](#2322-fading)
+    - [2.3 The data](#23-the-data)
+    - [2.3.1 Digital](#231-digital)
+      - [2.3.1.1 Blinking](#2311-blinking)
+      - [2.3.1.2 Un simple bouton](#2312-un-simple-bouton)
+    - [2.3.2 Analog](#232-analog)
+      - [2.3.2.1 LED's time blinking](#2321-leds-time-blinking)
+      - [2.3.2.2 Fading](#2322-fading)
 
 ## Introduction
 
+Welcome to the 2022 hardware pool.  
+I hope you are motivated !  
+Let's start with the basics:
+
 ## 0 - Setup
 
-## 1 - Les bases électriques :zap:
+## 1 - Electrical basics :zap:
 
-### 1.1 - La théorie
+### 1.1 - The theory
 
-Vous devrez regarder la suite de vidéo suivante cela vous prendra environ ***30 minutes***. Essentielle pour comprendre les fondamentaux des circuits électriques !
-- [La playlist](https://www.youtube.com/watch?v=oGiDi6a8hPY&list=PLGKyx5mruVO9xCjlbgU4grlv8qdqBEmMa&index=1)
+You will need to watch the following video suite which will take you about **30 minutes**. Essential to understand the fundamentals of electrical circuits!
+- [Playlist](https://www.youtube.com/watch?v=oGiDi6a8hPY&list=PLGKyx5mruVO9xCjlbgU4grlv8qdqBEmMa&index=1)
   - [ELECTRICITE, TENSION et INTENSITE ! #01](https://www.youtube.com/watch?v=oGiDi6a8hPY) (4'03)
   - [LOI D'OHM, RESISTANCE SERIE et PARALLELE ! #02](https://www.youtube.com/watch?v=282w0s8frZ8) (3'56)
   - [LOIS FONDAMENTALES de L'ELECTRICITE ! #03](https://www.youtube.com/watch?v=Iyxu9-akMVk&t=43s) (3'16)
@@ -38,58 +43,59 @@ Vous devrez regarder la suite de vidéo suivante cela vous prendra environ ***30
 
   - [UTILISER UNE LED et UNE RESISTANCE ! #08](https://www.youtube.com/watch?v=nSKQTvrBdNg) (3'33)
 
-### 1.2 - La visualisation
+### 1.2 - Visualization
 
-Maintenant que vous avez appris les bases, nous allons les conceptualiser grâce au simulateur [Falstad](https://www.falstad.com/circuit/circuitjs.html).
-Vous allez créer un simple circuit composé de:
-- **Générateur** (Draw > Inputs and Sources > Add Voltage Source) mettez le sur `3.3 V`.
+Now that you've learned the basics, let's conceptualize them with the [Falstad](https://www.falstad.com/circuit/circuitjs.html) simulator. You will create a simple circuit composed of:
+
+- **Generator** (Draw > Inputs and Sources > Add Voltage Source) set it to `3.3 V`.
 - **LED** (Draw > Outputs and Labels > Add LED)
-- **Résistance** (Draw > Add Resistor)
-- **Câbles** (Draw > Add Wire)
+- **Resistor** (Draw > Add Resistor)
+- **Cables** (Draw > Add Wire)
 
-Amusez-vous à changer les valeurs de la `résistance` pour voir comment circule le courant !
+Have fun changing the `resistance` values to see how the current flows!
 ```diff
-+Pour passer à la suite+
-Il faut que la LED s'allume ! (simple pour l'instant nan ?)
++To proceed to the next step+
+The LED has to light up! (simple for now, isn't it?)
 ```
 ```diff
 !~ Tips ~!
-Vous pouvez voir certain concept en allant dans:
+You can see some concepts by going to:
 @@Circuits > Basics@@
-Il y a plein d'exemple comme:
+There are plenty of examples like:
 @@Circuits > Basics > Ohm's Law@@
-Qui vous montre en pratique comment cela fonctionne !
+Who shows you in practice how it works!
 ```
 
-## 2 - L'électronique :cyclone:
+## 2 - Electronics :cyclone:
 
-### 2.1 La carte Arduino
-Avant de construire le Megazord, apprenez comment est concu [la carte Arduino](ArduinoCard.md) que vous allez beaucoup utiliser lors de cette piscine.
+### 2.1 The Arduino board
 
-### 2.2 Vos premiers pas
+Before building the Megazord, learn how the [Arduino board](ArduinoCard.md) that you will use a lot in this pool is designed.
+
+### 2.2 Your first steps
 #### 2.2.1 No code, just volts
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
 * LED
-* Résistance
+* Resistor
 
 </details>
 
-Faites un circuit reliant une LED à un Arduino et allumer cette LED.
+Make a circuit connecting a LED to an Arduino and turn on this LED.
 ```diff
-+Pour passer à la suite+
-Appelez un encadrant avant d’alimenter votre Arduino.
++To proceed to the next step+
+Call a supervisor before powering up your Arduino.
 ```
->:warning: Aucun code n'est requis pour cet exercise
->:warning: Vous n'avez pas le droit à la pin 3.3V
+>:warning: No code is required for this exercise
+>:warning: You are not allowed to use the 3.3V pin
 
-### 2.3 Les données
+### 2.3 The data
 
-Les cartes Arduino possèdent deux types d'I/O (Input/Ouput):
-- ***Digitaux*** - qui vont pouvoir lire / écrire des valeurs binaires (LOW ou HIGH) soit 0 et 1.
-- ***Analogues*** - qui vont pouvoir lire / écrire des valeurs variables. Par exemple les deux bornes sont (0;255), alors je pourrais lire 16 comme 232 selon l'information que le capteur remonte.
+Arduino boards have two types of I/O (Input/Output):
+- ***Digital*** - which will be able to read / write binary values (LOW or HIGH) either 0 and 1.
+- ***Analog*** - that will be able to read / write variable values. For example the two terminals are (0;255), so I could read 16 or 232 depending on the information that the sensor returns.
 
 > [Digital Pins](https://docs.arduino.cc/foundations/microcontrollers/digital-pins)
 > [Analog Input Pins](https://docs.arduino.cc/foundations/microcontrollers/analog-input)
@@ -98,16 +104,16 @@ Les cartes Arduino possèdent deux types d'I/O (Input/Ouput):
 ### 2.3.1 Digital
 #### 2.3.1.1 Blinking
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
 * LED
-* Résistance
+* Resistor
 
 </details>
 
-Bien évidemment vous commencez à coder avec `Arduino IDE`.
-Faites en sorte que la LED clignote toutes les secondes.
+Of course you start coding with `Arduino IDE` or `PlatformIO`.
+Make sure that the LED blinks every second.
 ```diff
 !~ Tips ~!
 delay();
@@ -115,16 +121,16 @@ delay();
 
 #### 2.3.1.2 Un simple bouton
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
 * LED
 * Bouton
-* Résistance
+* Resistor
 
 </details>
 
-Faites en sorte que la LED s'allume ou s'éteigne lorsqu'on appui sur le bouton. Comme votre interrupteur de maison.
+Make the LED turn on or off when the button is pressed. Just like your house switch.
 ```diff
 !~ Tips ~!
 INPUT_PULLUP
@@ -134,16 +140,16 @@ INPUT_PULLUP
 #### 2.3.2.1 LED's time blinking
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
 * LED
-* Potentiomètre
-* Résistance
+* Potentiometer
+* Resistor
 
 </details>
 
-Faites en sorte que le délai de clignotement de la LED soit dépendant des valeurs du potentiomètre.
+Make the LED flashing delay dependent on the potentiometer values.
 ```diff
 !~ Tips ~!
 map();
@@ -152,21 +158,21 @@ map();
 #### 2.3.2.2 Fading
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
 * LED
-* Résistance
+* Resistor
 
 </details>
 
-Faites en sorte de faire disparaître une LED.
-C'est à dire d'augmenter/diminuer progressivement l'intensité (pour créer un effet de fondu).
+Make an LED fade.
+That is, gradually increase/decrease the intensity (to create a fade effect).
 ```diff
-+Pour passer à la suite+
-Essayer votre circuit en mettant sur la LED sur:
- - un pin Analogique non PWM.
- - puis sur un pin Analogique PWM(~).
++To proceed to the next step+
+Try your circuit by putting on the LED on:
+ - a non-PWM Analog pin.
+ - then on an Analog PWM(~) pin.
 ```
 
-> La PWM est une technique permettant d'obtenir un comportement analogique à partir d'une sortie numérique en l'éteignant et en l'allumant très rapidement et avec un rapport différent entre les temps d'activation et de désactivation.
+> PWM is a technique for obtaining analog behavior from a digital output by turning it off and on very quickly and with a different ratio between on and off times.

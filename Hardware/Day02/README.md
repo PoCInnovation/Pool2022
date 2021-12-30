@@ -225,7 +225,7 @@ WiFiClient();
 
 Si vous avez bien géré votre loop vous pouvez vous connecter à votre ESP32 et aller sur votre `WebBrowser de téléphone` et tapez-y l'IP de votre Carte.
 Vous devriez voir affiché:
-![](../.github/day2/example_color_picker.png)
+![](../../.github/day2/example_color_picker.png)
 
 ### 3.2 - Among Us du RFC :detective:
 #### 3.2.1 Lancer l'API

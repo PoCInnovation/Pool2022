@@ -1,11 +1,13 @@
 # PoC Hardware, Day01
 
-## [Day01 Matin](Day01M.md)
+## [Day01 Morning](Day01M.md)
 
-- Les bases des circuits électriques et électroniques.
-- Premiers pas avec la carte Arduino nano.
+- The basics of electrical and electronic circuits.
+- First steps with the Arduino nano board.
 
-## [Day01 Aprem](Day01A.md)
+## [Day01 Afternoon](Day01A.md)
 
-- Conception de petit projet.
-- Apprentissage du fonctionnement des capteurs et modules.
+- Design of small projects.
+- Learning how sensors and modules work.
+
+:information_source: [ArduinoCard](ArduinoCard.md)

@@ -1,157 +1,170 @@
-# PoC Hardware, Day1 Aprem
+# PoC Hardware, Day1 Afternoon
 
-## Sommaire
+## Summary
+  - [Summary](#summary)
   - [Introduction](#introduction)
-  - [1 - Les projets :bulb:](#1---les-projets-bulb)
-
+  - [Led Memory game](#led-memory-game)
+    - [LED and Button](#led-and-button)
+    - [The Game](#the-game)
+  - [Calculator](#calculator)
+  - [Snake](#snake)
+  - [RFID Pass](#rfid-pass)
+  - [Shi Fu Mi](#shi-fu-mi)
+  
 ## Introduction
+
+On this afternoon you will design circuits.  
+You can do them in any order you want.  
+Don't hesitate to look on the net to know how a module works
 
 ## Led Memory game
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
-* 4x LED (de préférence: Rouge, Bleu, Vert, Jaune)
-* 4x Résistance
-* 4x Bouton
+* 4x LED (preferably: Red, Blue, Green, Yellow)
+* 4x Resistor
+* 4x Button
 
 </details>
 
-Vous connaissez tous le jeu [Simon](https://www.youtube.com/watch?v=1Yqj76Q4jJ4) ? Et bien vous allez devoir en recréer un, vous retrouverez tous ce dont vous aurez besoin dans *"🛠️ Matériel requis:"*.
+You all know the game [Simon](https://www.youtube.com/watch?v=1Yqj76Q4jJ4)? Well you will have to recreate one, you will find everything you need in *"🛠️ Materials required: "*.
 
-### LED et Bouton
+### LED and Button
 
-Commencez par mettre vos LED et Boutons sur la BreadBoard.
-Chaque bouton correspondra à une couleur de LED.
+Start by putting your LEDs and Buttons on the BreadBoard.
+Each Button will correspond to an LED color.
 
-> Par exemple: Bouton Rouge => LED Rouge
+> For example: Red Button => Red LED
 
 ```diff
-+Pour passer à la suite+
-Faite en sorte qu'en appuyant sur un bouton sa LED associé s'allume.
++To proceed to the next step+
+Make sure that when you press a button its associated LED lights up.
 ```
 
 ### The Game
 
-Maintenant que vous avez le circuit, il faudra coder !
+Now that you have the circuit, you will have to code!
 
-Faite clignoter les LED, pour commencer le jeu il faudra appuyer sur n'importe quel bouton.
+Flash the LEDs, to start the game you have to press any Button.
 
-Le jeu s'alternera entre les couleurs à mémoriser et les coups à jouer.
+The game will alternate between colors to memorize and moves to play.
 
-A chaque nouveau tour une couleur aléatoire sera ajouter à la séquence précédente.
+At each new turn a random color will be added to the previous sequence.
 
-Il faudra avoir une suite consécutive de `12 coups` pour gagner le jeu.
+You must have a consecutive sequence of `12 moves` to win the game.
 
-Si le joueur prend plus de `3 secondes` pour appuyer sur un bouton il a perdu.
+If the player takes more than `3 seconds` to press a Button he has lost.
 
-> Choisissez votre combinaison vainqueur et perdant.
-> ex: faire clignoter 3 fois la LED rouge pour perdant.
+> Choose your winner and loser combination.
+> ex: flash the red LED for loser 3 times.
 
 ## Calculator
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
-* Potentiomètre
+* Potentiometer
 * Display 16x2
 * Keypad 4x4
 
 </details>
 
-L'objectif de cette tâche est de créer une calculatrice.
+The objective of this task is to create a calculator.
 
-La première étape est de votre écran à votre Arduino.
-Ensuite il vous suffit d'utiliser la bibliothèque correspondant à votre [écran](https://www.arduino.cc/reference/en/libraries/liquidcrystal-i2c/) pour afficher "Hello World !".
+The first step is to connect your screen to your Arduino.
+Then you just have to use the library corresponding to your [screen](https://www.arduino.cc/reference/en/libraries/liquidcrystal-i2c/) to display **"Hello World !"**.
 
-Votre deuxième objectif l'installation de votre keypad sur votre Arduino et d'installer votre bibliothèque pour le [keypad](https://github.com/Chris--A/Keypad).
-A chaque fois que vous appuyer sur un nombre vous devez l'afficher sur votre écran LCD quand vous appuyez sur la touche "*".
+Your second objective is to install your keypad on your Arduino and to install your library for the [keypad](https://github.com/Chris--A/Keypad).   
 
-Pour définir les opérateurs dans notre keypad, nous allons partir de se postulat:
+Each time you press a number you must display it on your `LCD screen`.
+
+To define the operators in our keypad, we will start from this postulate:
 - A : '/'
 - B : '*'
 - C : '+'
 - D : '-'
 
-Il est maintenant temps de combiner vos opérateurs et vos chiffres.
-Quand vous appuyez sur la touche "*", votre écran affiche "=" suivi du résultat.
+Now it's time to combine your operators and numbers.  
+When you press the "*" key, your screen will display "=" followed by the result.
 
 ## Snake
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
-* Potentiomètre 10k
+* Potentiometer 10k
 * 8x8 Matrix display
 * Joystick
 
 </details>
 
-Cette exercice consiste à recréer le jeu snake.
-Vous allez tout d'abord connecté votre matrice à votre Arduino Uno.
-Ajouté la [bibliothèque](https://github.com/wayoda/LedControl) pour allumer des leds sur votre matrice.
-Faite en sorte d'avoir un pixel qui s'affiche aléatoirement toutes les secondes.
+This exercise consists in recreating the snake game.
+You will first connect your matrix to your Arduino Uno.
+Add the [library](https://github.com/wayoda/LedControl) to light leds on your matrix.
+Make sure you have a pixel that is displayed randomly every second.
 
-Vous allez ensuite connecté votre joystick sur votre arduino et faire avancé 2 pixels simultanément et les mouvoir avec votre joystick.
-Ajouter un potentiomètre pour contrôler la vitesse de vos affichage.
+You will then connect your joystick to your arduino and advance 2 pixels simultaneously and move them with your joystick.
+Add a Potentiometer to control the speed of your display.
 
-Vous avez maintenant toutes les étapes pour finir cette exercice.
-Ajoutez votre pixel aléatoire et affichez en un nouveau quand la tête de votre serpent touche celui ci.
-Dès que votre serpent touche une pomme, une led est ajouté à sa fin.
-Votre dernière étape est de restart : afficher "END" quand votre serpent touche une de ses leds ou quand il sort de la matrice.
+You now have all the steps to finish this exercise.  
+Add your random pixel and display a new one when the head of your snake touches it.  
+As soon as your snake touches an apple, a led is added at its end.  
+Your last step is to restart: display "END" when your snake touches one of its leds or when it leaves the matrix.
 
-Après avoir afficher "END", si le joystick bouge votre serpent reprend la position initial avec sa taille de départ.
+After displaying "END", if the joystick moves your snake will return to its initial position with its original size.
 
 ## RFID Pass
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
-* 2x Resistances
+* 2x Resistor
 * 2x LED (red and green)
 * Buzzer
 * RFID sensor
 
 </details>
 
-Cette exercice consiste à lire un badge en RFID, vous aurez besoin de la bibliothèque [SPI](https://www.arduino.cc/en/reference/SPI) et [MFRC522](https://github.com/miguelbalboa/rfid).
-Si son contenu est correct une led Verte s'allume.
-Sinon une led rouge s'allume accompagné d'un bruit émis par le buzzer.
+This exercise consists in **reading a badge in RFID**, you will need the library [SPI](https://www.arduino.cc/en/reference/SPI) and [MFRC522](https://github.com/miguelbalboa/rfid).  
+If its content is correct, a green led lights up.  
 
-Vous allez tout d'abord connecter votre lecteur RFID à votre Arduino.
-Écrivez un programme vous permettant de lire le contenu d'un carte en RFID.
-Maintenant, il vous reste plus cas allumer la LED rouge ou vert quand une carte est lu.
-La couleur de la LED correspond à la comparaison entre le contenu de la carte et d'une valeur de référence.
+> :warning: If not, a red led lights up with a noise emitted by the buzzer.
 
-> :warning: N'oubliez pas d'utiliser des résistances pour vos LED.
+You will first connect your RFID reader to your Arduino.  
+Write a program that allows you to read the content of a card in RFID.  
+Now you have to light the red or green LED when a card is read.  
+The color of the LED corresponds to the comparison between the content of the card and a reference value.
+
+> :warning: Don't forget to use resistors for your LEDs.
 
 
 ## Shi Fu Mi
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Materials required:</summary>
 
 * Arduino - Breadboard - Jumpers
-* 3x servo
+* 3x Servo
 * Ultrasonic sensor
 * Buzzer
 
 </details>
 
-Cette exercice consiste à créer un Shi Fu Mi.
-Chaque servo-moteurs correspond à une action (Shi, Fu, Mi).
-Le capteur Ultrasonic permet d'évaluer si un geste de la part de l'adversaire a été perçu.
-Le Buzzer émets un son quand l'action est exécutée.
+This exercise consists in creating a Shi Fu Mi.
+- **Each servo-motor** corresponds to an action (Shi, Fu, Mi).
+- **The Ultrasonic sensor** allows to evaluate if a gesture from the opponent has been perceived.
+- **The Buzzer** emits a sound when the action is executed.
 
-La première partie consiste à connecter votre capteur ultrasonic quand un objet entre dans une zone de 30 cm.
-Ajouter le buzzer, il doit émettre un bruit tant qu'un objet est dans la zone.
+The first part is to connect your ultrasonic sensor when an object enters a `30 cm area`.  
+Add the buzzer, it must emit a noise as long as an object is in the zone.
 
-Vous allez ensuite connecter un servo moteur et quand, un objet entre dans la zone le servo moteur s'active.
-Votre dernière étape consiste à mettre les 3 servo-moteurs dans votre circuit et d'en activer un aléatoirement quand une action est reconnu par le capteur ultrasonic.
+You will then connect a servo motor and when an object enters the area the servo motor is activated.  
+Your last step is to put the `3 servo-motors` in your circuit and activate `one randomly` when an action is recognized by the ultrasonic sensor.
 
 > 😊 Vous avez enfin finit votre circuit et votre premier jour de piscine !
 > ㊗️ Félicitations

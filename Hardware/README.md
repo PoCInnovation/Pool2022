@@ -1,50 +1,57 @@
-# :wave: Bienvenue à la piscine hardware 2022 de PoC !
+# :wave: Welcome to hardware 2022 de PoC !
 
-Pendant une semaine, vous allez pouvoir découvrir plusieurs facettes de l'hardware: de la communication entre les modules/sensor, concept plus pousser comme l'iot, les protocoles de communication. :rocket:
+During one week, you will be able to discover several facets of the hardware: from the communication between modules/sensors, more advanced concepts like iot, communication protocols. :rocket:
 
-Vous aurez, à l'issue de cette piscine, toutes les clefs en main pour démarrer n'importe quels projets de bas niveau.
+You will have, at the end of this pool, all the keys in hand to start any low level project.
 
-La piscine se découpe en 2 parties : une formation et une mise en application des connaissances.
+The pool is divided in 2 parts: a training and an application of knowledge.
 
-La formation se déroule en 5 jours, chacun portera sur un thème de l'hardware et sera encadrés par des étudiants ayant de grandes connaissances dans ces domaines. Des talks quotidiens sont également aux programmes pour éclaircir les notions les plus complexes et apporter des connaissances annexes très importantes.
+The training takes place in 5 days, each day will focus on a hardware theme and will be supervised by students with great knowledge in these fields. Daily talks are also scheduled to clarify the most complex notions and to bring very important additional knowledge.
 
-Des intervenants extérieurs viendront aussi apporter leur expériences du domaine et expliquer les grands axes du développent dans une entreprise.
+External speakers will also come to bring their experience in the field and explain the main axes of development in a company.
 
-## [Day 1 - Les fondamentaux et BAS](Day01/README.md)
+> :warning: You will find all the [setup of the days here](SETUP.md)
 
-**BAS:** Building Automation System
+## [Day 1 - The fundamentals and BAS](Day01/README.md)
 
-Vous découvrirez le fonctionnement des circuits électriques et de vos premières cartes arduino.
+**BAS:** Building Automation System  
+
+You will discover the functioning of electrical circuits and your first arduino boards.
 
 Talk:
 - L'Arduino c'est quoi ?
 
-## [Day 2 - Communications et IOT](Day02/README.md)
+## [Day 2 - Communications and IOT](Day02/README.md)
 
-Vous découvrirez certain protocoles de communications lors de projet les mettant en avant.
+You will discover certain communication protocols during projects that put them forward.
 
 Talk:
 - Les diffèrents protocoles de communications
 - Introduction à l'IOT
 
-## [Day 3 - PCB et CAD/CAO]()
+## [Day 3 - Networking]()
+~Description~
+Talk:
+- 1
 
-**PCB:** Printed Circuit Board
-**CAD:** Computer Aided Design
-**CAO:** Conception Assistée par Ordinateur
+## [Day 4 - PCB and CAD/CAO](Day04/README.md)
+
+**PCB:** Printed Circuit Board  
+**CAD:** Computer Aided Design  
+**CAO:** Conception Assistée par Ordinateur  
 
 ~Description~
 Talk:
 - 1
 
-## [Day 4 - Le réseaux]()
-~Description~
-Talk:
-- 1
-
-## [Day 5 - La sécurité]()
+## [Day 5 - Security]()
 ~Description~
 Talk:
 - 1
 
 ## Authors:
+| [<img src="https://github.com/OnsagerHe.png?size=85" width=85><br><sub>Albet VALENTIN</sub>](https://github.com/OnsagerHe) | [<img src="https://github.com/Cleopha.png?size=85" width=85><br><sub>Coline SEGURET</sub>](https://github.com/Cleopha) | [<img src="https://github.com/TheZAP.png?size=85" width=85><br><sub>Théo ZAPATA</sub>](https://github.com/TheZAP) 
+| :---: | :---: | :---: |
+
+| [<img src="https://github.com/Azzzen.png?size=85" width=85><br><sub>Axel ZENINE</sub>](https://github.com/Breigner01) | [<img src="https://github.com/Breigner01.png?size=85" width=85><br><sub>Benjamin REIGNER</sub>](https://github.com/Breigner01) | [<img src="https://github.com/Rgascoin.png?size=85" width=85><br><sub>Roman GASCOIN</sub>](https://github.com/Rgascoin) | 
+| :---: | :---: | :---: |
