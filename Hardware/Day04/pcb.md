@@ -1,13 +1,13 @@
 # Piscine Hardware : Creation de PCB!
 
-## Sommaire
+## Index
 
 ## Introduction
 
 Today, we're gonna see the basics of making a
 [PCB](https://en.wikipedia.org/wiki/Printed_circuit_board)
 
-### Logiciel de conception
+### Design software
 
 In order to do this, we're going to use a design software :
 [Easyeda](https://easyeda.com/). It is a proprietary software that makes design
@@ -15,7 +15,7 @@ easy. There are alternative software bu Easyeda is the only one to provide a
 complete environment, from the componant library to the actual purchase of the
 designed board.
 
-### Les alternatives au PCB
+### PCB alternatives
 
 Until today, you were creating your electronic circuits on breadboards, which is
 practical for prototyping, but not viable for a released product aiming to be
