@@ -59,13 +59,13 @@ Design is done in 2 steps : The electrical schematics and then the routing.
 
 ### PART1
 
-Pour cette exo vous allez reprendre un project existant et le complete pour
-vous familiariser avec l'éditeur. Vous le trouvere dans le dossier ressource
+For this exercise, you are gonna use an existing project and complete it to
+familiarize yourself with the editor. You can find it in the ressources folder
 
 LIEN
 
-Ce project contient plusieurs boutons et led.
-On vous demande d'effectuer les connection électrique suivante :
+This project contains several buttons and leds.
+You'll need to connect them in the following way :
 
 SW1 -> D7
 
@@ -75,159 +75,150 @@ LED1 -> D6
 
 LED2 -> D5
 
-Pour l'alimentation électrique on utilisera le port usb de l'Arduino
+We are gonna be using the arduino USB port for power.
 
-Vous pouvez déplacer tout les composent pour les relies le mieux possible
-penser les recommendations électrique des composants, comme vue les premiere
-jours
+you can move every component around to link them in the best possible way, think
+about the recommended ways to connect them, as seen in the first pool days.
 
 ### PART 2
 
-Maintenant que le schema est fait, nous allons passer a la partie routing.
+Now that the schematics are done, we'll get to routing.
+Go to Design -> Convert schematic to PCB
 
-Pour ce faire aller dans Design -> Convert schematic to PCB
+A new page opens up, use the default parameters.
 
-Une nouvelle page s'ouvre, utiliser les paramètre par default.
-
-Crée la board de telle manner à avoir l'Arduino avec le port usb sur la droite
-et les LED sur le dessus et les buttons en dessous
+Create the board in such a way that the arduino board's usb port in facing the
+right side and the led is on top, with the buttons underneath.
 
 ## EXO 2
 
 ### Introduction
 
-Maintenant que vous avez fait votre premier pcb en utilisant des compensant
-présélectionner par mes soins, vous allez rentrer dans la partie la plus
-compliquer, dans un vrai project il faut sélectionner sois meme ces composants,
-ici vous seré toujours guider.
+Now that you've created your first pcb using components I pre-selected, you'll
+enter the most complicated part. In a real project, you need to select
+components yourself, while you'll always be guided here.
 
-Dans l'exo 1 vous utiliser une carte arduino, ici nous allons directement
-utiliser le puce qui se trouve sur les ESP32.
+While in the first Exercise, you used an arduino board, here we're going to be
+directly using the chip found in ESP 32 boards.
+For the next exercises, You're going to iterate on the same design, adding
+features one after the other. Here you'll be doing more work than you would have
+on an actual project, since you'll be routing everything at every step, whereas
+in a real project, the routing would have only be done once the design established.
 
-Pour les prochains exercices vous allez à chaque fois itéré sur le design en
-y ajoutant des fonctionaliters au fer et a mesure. Ici vous aurez donc du
-travaille en plus par rapport a un vrai project puisque vous passerez par
-l'etappe de routing a chaque itération. Dans le cas d'un project réel vous
-ne passer a l'étape de routing, qu'une fois l'étape de conception finit.
-
-Vous devez vous demander ce que vous aller réaliser. Votre but sera de concevoir
-une telecomande universsel pour controler n'inport quelle type de project que
-vous orier envie de crée dans le futur
+You must now be wondering what you are going to make. Your goal will be to
+design a universal remote to control any and all projects you'll be making in
+the future.
 
 ### Part 1
 
-Les bases, Pour une telecomande, il faut un controller, ici un esp32.
-Tout composant éléctronique a besoin de conpensant dit passiffe pour fonctionner
-(resistance, capacitor, inductance, etc). Toute ces information peuve etre
-trouver dans la datasheet du composant. Elle est disponible directement
-depuis le site de JCLBCP, (meme si par moment vous devrer aprendre a lire le
-chinoi, literalment). Elle sont le plus souvent trouvable en ligne.
+The basics : For a remote, you need a controller, and we'll use an ESP32 board
+here.
+Any electronics component needs passive components in order to work (resistor,
+capacitor, inductor etc...). All these informations are in the component's
+datasheet. They are available directly on the JCLBCP website (even if you might
+find yourself literally reading chinese sometimes).
 
-Ouvrer la datasheet de l'esp32 et trouver les informations qui vous manque
-pour avoir un esp32 fonctionnel, vous devrez rajouter les composants manquant
-vous meme depuis le library JLCBCP
+Open the ESP32 datasheet and find the missing informations you need for a
+functionnal ESP32 board. you'll need to add the missing components yourself from
+the JLCBCP library.
 
 <details>
     <summary>Tips</summary>
 
-    Rendez vous a la page 19
+    Let's meet again on page 19
 
 </details>
 
-- Un esp32-s2
-- Un port USB-C
-- Un crystal (a la bonne fréquence)
-- Un régulateur de tension LDO (3.3V)
-- Un bouton reset
-- Un bouton flash (boot mode)
-- Un port de debug (JTAG)
-- Un port de communication serie (UART)
-- Un led d'éta
+- An esp32-s2
+- A USB-C port
+- A crystal (a la bonne fréquence)
+- An LDO tension regulator (3.3V)
+- A reset switch
+- A flash switch (boot mode)
+- A debug port (JTAG)
+- A serial communication port (UART)
+- A state led
 
-N'hésitez pas à nous appeler si vous avez besoin d'aide, des questions et pour
-nous faire valider vos design.
+Don't hesitate to reach out if you need help, have questions, or need to
+validate your design.
 
 ### Part 2
 
-Pour le routing, il n'y a pas de contrainte supplémentaire. Cependant, penser à
-respecter les contraintes des composants que vous avez utilisés, notamment
-l'USB et [le WIFI](https://lewifi.fr/)
+There are no additional constraints for routing. But don't forget about the
+constraints of the components you've been using so far, like the USB port and
+[the WIFI](https://lewifi.fr/)
 
 ## EXO 3
 
 ### Part 1
 
-Les bases de l'esp sont prete mais vous conviendré que pour l'instant
-ce ne ressemble pas vraiment a une télécommande, On va y remédier tout de suite.
-Pour ca on va y rajouter des boutons.
+The ESP32 basics are ready, but you'll admit that it doesn't look too much like
+a remote for now. We'll fix this right now by adding some buttons.
 
-Je vous demande d'avoir au moin :
+I need you to gather at least :
 
-- 2 joystick analogique 2 axe
-- 2 switch on/off
-- 2 bouton
+- 2 2-axis analog joysticks
+- 2 on/off switches
+- 2 push buttons
 
-Vous pouvez rajouter ce que vous voulez (mais ne perdez pas trop de temps)
+You can add anything else you want, but don't waste too much time
 
 ### Part 2
 
-Votre PCB devra avoir la forme d'une manette et les boutons devront etre
-placer de manière logique pour une manette.
+Your PCB must be shaped like a video game controller, and the switches must be
+placed in a way that makes sense on a controller.
 
 ## EXO 4
 
-Bien maintenant vous allez ajouter d'autre chip
+Now you're going to add other chips :
 
-- NRF24L01P-R: un transceiver radio (C8791)
-- MMA8653FCR1: Un gyroscope (C132231)
-- TF-01A: Un lecteur de carte SD (C91145)
+- NRF24L01P-R: a radio transceiver (C8791)
+- MMA8653FCR1: a gyroscope (C132231)
+- TF-01A: an sd-card reader (C91145)
 
-Penser a aller regarder les datasheet des c'est compsant pour comprendre comment
-les connecters a l'esp
+Don't forget to check out these component's datasheets to understand how to
+connect them to the ESP
 
 ### EXO 5
 
-On va y ajouter un ecran OLED (C90547) pour afficher toute sorte d'information
-et de configuration, qui dit un ecran, dit un nouveau system de control.
-5 boutons disposer en D-Pad devrait le faire.
+We'll be adding an OLED display (C90547), to display all sorts of information
+and configuration. But a screen means another control system :
+5 switches laid out in D-pad fashion should do it.
 
-Penser à mettre a jour le routing avec ces nouveaux compensant.
+Don't forget to update the routing with these new components.
 
 ### EXO 6
 
-Jusque ici votre télécommande ne fonctionne que brancher. Pas tres
-pratique. Une solution simple, ajoutez une batterie !
+Up to this point, your remote needed to be plugged-in to work, not very
+practical. Here's a solution : add a battery !
 
-Penser à ajouter un régulateur de tension et un system de charge et un
-indicateur de niveau.
+Don't forget to add a tension regulator, a charging system and a level indicator
 
 ### EXO 7
 
-Et si on allait plus loin ?
+How about going farther ?
 
 #### .1
 
-Vous en conviendrez un pcb entre les mains, ce n'est pas le plus pratique.
-Et si vous metier ce que vous avez apres ce matin à contribution ?
-Je vous demande de créer un boitier imprimable en 3D pour votre télécommande
-universelle
+You're right, holding a naked pcb isn't the most ergonomic thing. What if you
+used what you learned earlier today in this project ?
+I'm asking you to create a 3D model of a case for your remote.
 
 #### .2
 
-Au tout debut je vous ai fait utiliser un esp32-s2, ce microcontroller a une
-particulariter, en plus d'embarquer du wifi et du bluetooth, il dispose d'une
-interface usb 2.0 complete, vous pouvez donc écrire un driver pour le rendre
-compatible avec un ordinateur pour en faire au choix, une manette de jeu
-ou une station au sol pour afficher plus d'information sur la ou les appareils
-au quelle il est connecté. Le wifi ou le Bluetooth pourrait aussi vous servire.
+In the beginning, I made you use an ESP32-S2. This microcontroller has a few
+advantages : it carries wifi and bluetooth, but it also has a complete 2.0
+interface, which means that you can write a driver to make it usable with a
+computer to make it either a game controller or a ground station to display more
+information about the devices it is connected to. Wifi and Bluetooth could be
+useful to you here.
 
 ## Conclusion
 
-Félicitation vous avez réalisé vos premiers PCB, si vous le souhaiter vous
-pouvez commander vos créations directement à partir de vos schema.
-Attention tout de meme, il se peut qu'il y ait encore des erreurs dans vos
-circuits et de plus souder ce type de composant à la main peut etre
-une tache relativement complexe.
+Congratulations ! You made your very own PCB. You can even order your first
+creation directly from your schematics. But be careful, there might still be
+mistakes in your work, and soldering the components yourself might be a tough
+task.
 
-Si vous voulez voir à quoi aurait pu ressembler ces exercices, vous pourrez
-consulter ma version
+If you want to see what these exercises could have looked like, you can always
+check out my own version.
