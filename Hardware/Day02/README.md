@@ -13,12 +13,12 @@
     - [2.3 - Scan BLE](#23---scan-cle)
   - [3 - WiFi](#3---wifi)
     - [3.1 - Color Picker :syringe:](#31---color-picker-syringe)
-      - [3.1.1 Piloter la LED](#311-piloter-la-led)
-      - [3.1.2 Créer votre premier Access Point](#312-créer-votre-premier-access-point)
-      - [3.1.3 Web Server sur ESP32](#313-web-server-sur-esp32)
-    - [3.2 - Among Us du RFC :detective:](#among-us-du-rfc-detective)
-      - [3.2.1 Lancer l'API](#321-lancer-lapi)
-      - [3.2.2 Trouver les imposteurs](#322-trouver-les-imposteurs)
+      - [3.1.1 Controlling the LED](#311-controlling-the-led)
+      - [3.1.2 Create your first Access Point](#312-create-your-first-access-point)
+      - [3.1.3Web Server on ESP32](#313-web-server-on-esp32)
+    - [3.2 - Among Us of RFC :detective:](#among-us-of-rfc-detective)
+      - [3.2.1 Launch the API](#321-launch-the-api)
+      - [3.2.2 Finding the imposters](#322-finding-the-imposters)
   - [4 - MQTT](#4---mqtt)
     - [4.1 - Connect to Wi-Fi](#41---connect-to-wi-fi)
     - [4.2 - SetUp Mosquitto](#42---setup-mosquitto)
@@ -30,8 +30,8 @@
 
 ## Introduction
 
-Lors de cette journée, vous allez apprendre plusieurs `protocoles de communication` et élaborer des projets autour de ses protocoles que l'on retrouve partout dans notre quotidien !
-Et le plus important vous allez avoir une brève approche à l'`IOT` (Internet Of Things)
+During this day, you will learn several `communication protocols` and develop projects around these protocols that are found everywhere in our daily lives!
+And most importantly you will have a brief approach to `IOT` (Internet Of Things)
 
 - Inter System Communication Protocols
   - USB  (Universal Serial Bus)
@@ -146,7 +146,7 @@ You now know the basics of BLE ESP32.<br/>
 ## 3 - Wifi
 ### 3.1 - Color Picker :syringe:
 
-Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur d'une LED RGB
+Create your first `web server` on ESP32 to control the color of an RGB LED.
 
 <details>
     <summary> 🛠️ Matériel requis:</summary>
@@ -157,14 +157,14 @@ Créer votre premier `web server` sur ESP32 permettant de contrôler la couleur 
 
 </details>
 
-#### 3.1.1 Piloter la LED
-Pour débuter notre programme, commencez par piloter votre LED RGB grâce à l'ESP32.
-Pour cela vous allez devoir écrire dans le `Serial Monitor` la couleur souhaité sous cette forme: `r255g00b00&`. Vous comprendrez par la suite.
+#### 3.1.1 Controlling the LED
+To begin our program, start by driving your RGB LED with the ESP32.
+To do this you will have to write the desired color in the `Serial Monitor` in this form: `r255g00b00&`. You will understand later.
 
-> r pour red, g pour green, b pour blue
-> Soit le nombre après chaque lettre compris entre 0 et 255 (un byte)
+> r for red, g for green, b for blue
+> Let the number after each letter be between 0 and 255 (one byte)
 
-Créer la fonction dont le header est ci-dessous:
+Create the function whose header is below:
 ```arduino
 void change_led_color(String header)
 ```
@@ -185,17 +185,17 @@ String.substring();
 @@ ok @@
 ```
 
-#### 3.1.2 Créer votre premier Access Point
-Vous devrez mettre l'ESP32 en `AP`. Et print l'address IP de votre carte.
-Nommé votre réseau comme suit:
+#### 3.1.2 Create your first Access Point
+You will need to set the ESP32 to `AP'. And print the IP address of your card.
+Name your network as follows:
 ```
-RGB_votrePrenom
+RGB_yourName
 ```
-Bien sûr votre code devra être dans la fonction `setup` de votre code.
+Of course your code should be in the `setup` function of your code.
 
 ```diff
-+Pour passer à la suite+
-Aller dans les réglages WiFi de votre téléphone et regardé si votre Access Point y est.
++To move on+
+Go to your phone's WiFi settings and see if your Access Point is there.
 ```
 ```diff
 !~ Tips ~!
@@ -203,11 +203,11 @@ WiFi.h
 ```
 > ESP32 Useful Wi-Fi Library [Explication](https://randomnerdtutorials.com/esp32-useful-wi-fi-functions-arduino/)
 
-#### 3.1.3 Web Server sur ESP32
-Maintenant il vous faudra créer un ***serveur sur le port 80*** de votre carte.
-Par la suite il faudra créer votre client, qui vous permettra d'écrire l'`htlm` sur votre serveur.
-Il faudra utiliser `color_picker.html` qui se trouve dans les `resouces/`.
-La fonction permettant de mettre le code html sur votre serveur sera construit comme suit:
+#### 3.1.3 Web Server on ESP32
+Now you need to create a ***server on port 80*** of your card.
+Then you have to create your client, which will allow you to write the `htlm` on your server.
+You will have to use `color_picker.html` which is located in `resouces/`.
+The function to put the html code on your server will be built as follows:
 ```arduino
 void web_color_picker(WiFiClient client)
 ```
@@ -218,50 +218,50 @@ WiFiServer();
 WiFiClient();
 ```
 > Documentation [Create A Web Server](https://electropeak.com/learn/create-a-web-server-w-esp32/)
-> Un code d'exemple vous devriez vite comprendre [ESP32 Web Server – Arduino IDE](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
-> La documentation de [WiFi library](https://www.arduino.cc/en/Reference/WiFi)
+> An example code you should quickly understand [ESP32 Web Server - Arduino IDE](https://randomnerdtutorials.com/esp32-web-server-arduino-ide/)
+> The [WiFi library](https://www.arduino.cc/en/Reference/WiFi) documentation
 >
-> :warning: Vous n'avez pas le droit à la lib <WebServer.h> :)
+> :warning: You are not allowed to use the lib <WebServer.h> :)
 
-Si vous avez bien géré votre loop vous pouvez vous connecter à votre ESP32 et aller sur votre `WebBrowser de téléphone` et tapez-y l'IP de votre Carte.
-Vous devriez voir affiché:
+If you have managed your loop well you can connect to your ESP32 and go to your `Phone WebBrowser` and type in the IP of your Card.
+You should see it displayed:
 ![](../../.github/day2/example_color_picker.png)
 
-### 3.2 - Among Us du RFC :detective:
-#### 3.2.1 Lancer l'API
+### 3.2 - Among Us of RFC :detective:
+#### 3.2.1 Launch the API
 
-Le but de cet exercise sera d'envoyer des request http à une API ce trouvant dans les `resources/`.
-Vous y retrouverez un `docker-compose.yml` il faudra donc avoir **docker** d'installé sur votre machine et d'effectuer la commande suivante:
-```bash
+The purpose of this exercise is to send http requests to an API in the `resources/`.
+You will find a `docker-compose.yml` there, so you will need to have **docker** installed on your machine and run the following command:
+``bash
 docker-compose up -d
 ```
 
-L'API tourne sur le `port 3000`. Pour avoir plus d'info sur l'API aller sur la route ***/about.json***.
+The API runs on the `port 3000`. For more info on the API go to the route ***/about.json***.
 
 http://localhost:3000/about.json
 
-#### 3.2.2 Trouver les imposteurs
+#### 3.2.2 Finding the imposters
 
 <details>
-    <summary> 🛠️ Matériel requis:</summary>
+    <summary> 🛠️ Required hardware:</summary>
 
 * ESP32 - Breadboard - Jumpers
-* 2x LED (Rouge/Vert)
-* 2x Résistances
-* Lecteur RFID-RC522
+* 2x LEDs (Red/Green)
+* 2x Resistors
+* RFID-RC522 reader
 
 </details>
 
-Connectez votre PC et votre ESP32 sur le même réseau.
-Grâce au lecteur RFID et aux cartes et badges fournis le but sera de découvrir qui est l'imposteur.
-Scannez les cartes et badges, s'il s'agit d'un imposteur allumez la LED rouge sinon la LED verte.
+Connect your PC and your ESP32 on the same network.
+Thanks to the RFID reader and the provided cards and badges the goal will be to find out who the impostor is.
+Scan the cards and badges, if it is an impostor turn on the red LED otherwise the green LED.
 
 ```diff
 !~ Tips ~!
 HTTPClient.h
 ```
 ## 4 - MQTT
-Le MQTT est un protocole permettant de connecté plusieurs objets utilisant des technologies différentes.
+The MQTT is a protocol allowing to connect several objects using different technologies.
 ### 4.1 - Connect to Wi-Fi
 <details>
     <summary> 🛠️ Required Hardware:</summary>
