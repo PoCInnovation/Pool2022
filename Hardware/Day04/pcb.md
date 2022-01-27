@@ -131,7 +131,7 @@ the JLCBCP library.
 
 - An esp32-s2
 - A USB-C port
-- A crystal (a la bonne fréquence)
+- A crystal (at the right frequency)
 - An LDO tension regulator (3.3V)
 - A reset switch
 - A flash switch (boot mode)
