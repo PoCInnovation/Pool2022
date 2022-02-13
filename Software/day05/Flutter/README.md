@@ -296,3 +296,5 @@ Add [annimations](https://docs.flutter.dev/development/ui/animations) to enhance
 Storing a JWT inside a store is a bad idea. Here is [how to solve this problem](https://flutteragency.com/save-jwt-tokens-in-flutter-apps/).
 
 Your turn !
+
+> Made with :heart: by PoC

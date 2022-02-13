@@ -282,3 +282,5 @@ Indeed, don't forget to exposed ports and link your services.
 - [Improve your stack deployment with Helm](https://helm.sh)
 - [A GUI to manage your container: LazyDocker](https://github.com/jesseduffield/lazydocker)
 - [Infra as code with Terraform](https://registry.terraform.io)
+
+> Made with :heart: by PoC

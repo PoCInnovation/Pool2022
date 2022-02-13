@@ -646,3 +646,5 @@ What if you could share data between different components without passing parame
 Well it's possible, it's called [React Context](https://en.reactjs.org/docs/context.html).
 
 Try to use it.
+
+> Made with :heart: by PoC

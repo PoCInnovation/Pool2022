@@ -1029,3 +1029,5 @@ If you want to learn more about databases, here are some interesting links:
 - [The graph databases](https://medium.com/wiidii/pourquoi-sint%C3%A9resser-aux-bases-de-donn%C3%A9es-orient%C3%A9es-graphe-e650f0395951)
 - [DGraph](https://dgraph.io/)
 - [MongoDB](https://www.mongodb.com/en)
+
+> Made with :heart: by PoC

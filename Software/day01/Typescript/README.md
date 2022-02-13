@@ -1038,3 +1038,5 @@ Try to do it in that way, merge your `repository` and your `model` into a [Class
 - [Templating](https://refactoring.guru/design-patterns/template-method/typescript/example)
 - [Contribute to Typescript](https://github.com/microsoft/TypeScript)
 - [Type a Javascript module](https://github.com/DefinitelyTyped/DefinitelyTyped)
+
+> Made with :heart: by PoC

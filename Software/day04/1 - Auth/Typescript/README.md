@@ -387,3 +387,5 @@ to safely store session.
 - [Reset email workflow](https://medium.com/swlh/password-workflows-with-nodejs-on-aws-736e66cee71)
 - [Store sensitive data in Vault](https://codersociety.com/blog/articles/hashicorp-vault-node)
 - [Other authentication workflow](https://apiacademy.co/2021/04/the-most-common-api-authentication-methods/)
+
+> Made with :heart: by PoC

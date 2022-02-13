@@ -224,3 +224,5 @@ Implemente the authentification with other sites, such as [GitHub](https://sharm
 ### Persistent database
 
 You can use a real database to stock your users
+
+> Made with :heart: by PoC

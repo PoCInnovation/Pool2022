@@ -831,3 +831,5 @@ You can maybe start by adding the **CRUD** for your new `Music` resource.
 - [Generics](https://go.dev/doc/tutorial/generics)
 - [Go routines](https://medium.com/technofunnel/understanding-golang-and-goroutines-72ac3c9a014d)
 - [Courses](https://www.calhoun.io)
+
+> Made with :heart: by PoC

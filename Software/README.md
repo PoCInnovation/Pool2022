@@ -65,3 +65,5 @@ By groups of 3 to 5, you will have to create a clone of Airbnb, Deezer, Linkedin
 
 | [<img src="https://github.com/Encorpluptit.png?size=85" width=85><br><sub>Damien BERNARD</sub>](https://github.com/Encorpluptit) | [<img src="https://github.com/lucas-louis.png?size=85" width=85><br><sub>Lucas LOUIS</sub>](https://github.com/lucas-louis) | [<img src="https://github.com/AlexandreCollin.png?size=85" width=85><br><sub>Alexandre COLLIN-BÉTHEUIL</sub>](https://github.com/AlexandreCollin) | [<img src="https://github.com/barbo69.png?size=85" width=85><br><sub>Baptiste BARBOTIN</sub>](https://github.com/barbo69)
 | :---: | :---: | :---: | :---: |
+
+> Made with :heart: by PoC

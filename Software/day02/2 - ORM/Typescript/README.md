@@ -601,3 +601,5 @@ Some link to additional resources and cool stuff
 - [ORM vs raw SQL](https://levelup.gitconnected.com/raw-sql-vs-query-builder-vs-orm-eee72dbdd275)
 - [Prisma Blog](https://www.prisma.io/blog/)
 - [Comparing Prisma](https://www.prisma.io/docs/concepts/more/comparisons)
+
+> Made with :heart: by PoC
