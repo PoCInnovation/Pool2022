@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  database:
+    container_name: day05-database
+    image: postgres:12-alpine
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - ${DB_PORT}:5432
+#     networks:
+#       - database_network
+
+#   studio:
+#     container_name: day05-studio
+#     image: timothyjmiller/prisma-studio:latest
+#     restart: unless-stopped
+#     env_file:
+#      - .env
+#     environment:
+#       - POSTGRES_USERNAME=${DB_USER}
+#       - POSTGRES_PASSWORD=${DB_PASSWORD}
+#       - POSTGRES_HOST=database
+#       - POSTGRES_PORT=${DB_PORT}
+#       - POSTGRES_NAME=${DB_NAME}
+#       - POSTGRES_URL=postgresql://$DB_USER:$DB_PASSWORD@database:$DB_PORT/$DB_NAME
+#     ports:
+#       - ${PRISMA_STUDIO_PORT}:8888
+#     depends_on:
+#       - database
+#     networks:
+#       - database_network
+
+# networks:
+#   database_network:

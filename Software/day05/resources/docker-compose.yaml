@@ -1,0 +1,57 @@
+version: "3"
+
+services:
+  backend:
+    container_name: day05-backend
+    build: backend
+    env_file:
+      - .env
+    environment:
+      - API_HOST=0.0.0.0
+      - DB_URL=${DB_URL}
+    ports:
+      - "${API_PORT}:${API_PORT}"
+    depends_on:
+      - database
+    networks:
+      - backend_network
+
+  database:
+    container_name: day05-database
+    image: postgres:12-alpine
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    networks:
+      - backend_network
+      - database_network
+    volumes:
+      - database_volume:/var/lib/postgresql/data/
+
+  studio:
+    container_name: day05-studio
+    image: timothyjmiller/prisma-studio:latest
+    restart: unless-stopped
+    env_file:
+     - .env
+    environment:
+      - POSTGRES_USERNAME=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_HOST=${DB_HOST}
+      - POSTGRES_PORT=${DB_PORT}
+      - POSTGRES_NAME=${DB_NAME}
+      - POSTGRES_URL=${DB_URL}
+    ports:
+      - ${PRISMA_STUDIO_PORT}:5555
+    depends_on:
+      - database
+    networks:
+      - database_network
+
+networks:
+  backend_network:
+  database_network:
+
+volumes:
+  database_volume:
