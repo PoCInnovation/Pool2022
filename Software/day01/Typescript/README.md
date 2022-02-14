@@ -191,7 +191,7 @@ run your tests, deploy infrastructure or whatever required to manage your projec
 
 Write a script `start` that will execute the command `ts-node src/index.ts`.
 
-You can a script defined in your `package.json` using `npm run <script name>`.<br>
+You can run a script defined in your `package.json` using `npm run <script name>`.<br>
 To run your program, tip `npm run start` in your terminal.
 
 > Discover more about scripts [here](https://docs.npmjs.com/cli/v8/using-npm/scripts).
