@@ -264,7 +264,7 @@ and [`fmt.Errorf`](https://pkg.go.dev/fmt#Errorf).*
 
 It's really hard to test I/O with unit test, but that's why functional tests exist!
 
-[Download them from GitHub](https://github.com/PoCInnovation/Correction-Pool2022/blob/master/Software/day01/Go/resources/testWhatIsYourName.zip)
+[Download them from GitHub](https://github.com/PoCInnovation/Pool2022/blob/master/Software/day01/Golang/resources/testWhatIsYourName.zip)
 and extract sources in your directory.
 
 Then, create a binary of your project using `go build`.
