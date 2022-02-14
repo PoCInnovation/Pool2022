@@ -370,7 +370,7 @@ between them.
 
 - Create a package `artistsBook` with a file `router.go` in it.
 - Create a function `Router` that will do the loop describe in the example.
-> You are big boy/girl now, you got the keys to do it by yourself.
+> You are big boy/girl now :rocket: You got the keys to do it by yourself.
 - Update `main.go` to call `Router`.
 
 ### Controllers
