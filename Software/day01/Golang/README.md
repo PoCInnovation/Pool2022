@@ -189,7 +189,7 @@ array := []int{
   	24,
   }
 
-fmt.Prinln(getEvenNumbers.GetEvenNumbers(array))
+fmt.PrintLn(getEvenNumbers.GetEvenNumbers(array))
 ```
 
 You should get the following result
