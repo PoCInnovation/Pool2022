@@ -81,7 +81,7 @@ To make it easier, we will use a GitHub classroom! Follow this [link](https://cl
 Then, you can clone your repository.
 
 ```shell
-git clone https://github.com/PoC-Community/software-pool-days-{YOUR-GITHUB-USERNAME}
+git clone git@github.com:PoC-Community/software-pool-days-{YOUR-GITHUB-USERNAME}
 ```
 
 For each day, we will create a new folder. Start with the `day01`.
