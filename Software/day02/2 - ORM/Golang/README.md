@@ -55,7 +55,7 @@ You will therefore have to create and interact again with a database containing 
 <details>
   <summary>Here is the database diagram:</summary>
 
-![Database schema](../../../.github/assets/software_bdd_part2.png)
+![Database schema](../../../../.github/assets/software_bdd_part2.png)
 
 </details>
 
@@ -124,7 +124,7 @@ Like this morning, we will be using a [PostgreSQL](https://www.postgresql.org/) 
 <details>
   <summary>As a reminder, here is the database diagram:</summary>
 
-![Database schema](../../../.github/assets/software_bdd_part2.png)
+![Database schema](../../../../.github/assets/software_bdd_part2.png)
 
 </details>
 
