@@ -140,13 +140,13 @@ Create a `.env` file in which you will put the environment variables related to 
 
 To create a new database, simply execute the following command.
 ```shell
-docker run --name [DB_NAME] -e POSTGRES_PASSWORD=[DB_PASS] -e POSTGRES_USER=[DB_USER] -e POSTGRES_DB=[DB_NAME] -p [DB_HOST]:[DB_PORT] -d postgres:alpine
+docker run --name [DB_NAME] -e POSTGRES_PASSWORD=[DB_PASS] -e POSTGRES_USER=[DB_USER] -e POSTGRES_DB=[DB_NAME] -p [DB_PORT]:[DB_PORT] -d postgres:alpine
 ````
 
 Or :
 ```shell
 source .env
-docker run --name $DB_NAME -e POSTGRES_PASSWORD=$DB_PASS -e POSTGRES_USER=$DB_USER -e POSTGRES_DB=$DB_NAME -p $DB_HOST:$DB_PORT-d postgres:alpine
+docker run --name $DB_NAME -e POSTGRES_PASSWORD=$DB_PASS -e POSTGRES_USER=$DB_USER -e POSTGRES_DB=$DB_NAME -p $DB_PORT:$DB_PORT-d postgres:alpine
 ```
 
 > It is possible to create several databases in a single postgres database, it's why each db is given a name.
