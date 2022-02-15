@@ -100,7 +100,7 @@ You should see a new folder `prisma` in your current directory.
 
 To begin, we will create only one table.
 
-In the file `prisma/schema.prima`, create a new model `Artist` with the
+In the file `prisma/schema.prisma`, create a new model `Artist` with the
 following properties :
 - `id`: the unique key of your model, it must be a string [automatically generated as uuid](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model#defining-a-default-value).
 - `name`: Artist's name
@@ -159,7 +159,7 @@ effort.
 Add the following `script` to your `package.json` : 
 
 ```json
-"dev:db": "docker run --name {$DB_NAME} -e POSTGRES_PASSWORD=${DB_PASS} -e POSTGRES_USER=${DB_USER} -e POSTGRES_DB=${DB_NAME} -p ${DB_PORT}:${DB_PORT} -d postgres:alpine",
+"dev:db": "docker run --name ${DB_NAME} -e POSTGRES_PASSWORD=${DB_PASS} -e POSTGRES_USER=${DB_USER} -e POSTGRES_DB=${DB_NAME} -p ${DB_PORT}:${DB_PORT} -d postgres:alpine",
 ```
 
 You can now start the database 
