@@ -52,7 +52,7 @@ Let's begin with a simple `hello world`. Indeed, it will be more complex
 than a simple hello world function called from a main, but it's not that hard.
 
 First, we must create a server using [Gin](https://github.com/gin-gonic/gin)
-package. It's the most popular framework to create server in NodeJS.
+package. It's the most popular framework to create server with Golang.
 > ***Please take a moment to read the documentation.***\
 > Here is the [quickstart](https://github.com/gin-gonic/gin#quick-start)
 
