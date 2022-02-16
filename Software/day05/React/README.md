@@ -20,7 +20,7 @@ A user interface (UI) is the point at which humans interact with a computer, a w
 
 For instance, your terminal is a user interface.
 
-**What does this Javascript librairy allow us to do ?**
+**What does this Javascript library allow us to do ?**
 
 Thanks to React, you can build [*React Components*](https://en.reactjs.org/docs/components-and-props.html).
 
@@ -33,10 +33,10 @@ All these DOM elements in memory compose the Virtual DOM.
 > DOM stands for Document Object Model, wich is the HTML representation of a web page.
 > As a consequence, a DOM element is a part of the HTML representation of a web page.
 
-This Virtual DOM is a copie of the Real DOM.
+This Virtual DOM is a copy of the Real DOM.
 
 - The Real DOM is the HTML representation of the web page that the user sees. It's updated by [*queries*](https://burlingtoncodeacademy.github.io/webdev-prework-track/DOM_queries)
-- The Virtual DOM is a copie of the Real DOM. It's automatically updated when the state of a React Component is updated. It automatically updates the Real DOM.
+- The Virtual DOM is a copy of the Real DOM. It's automatically updated when the state of a React Component is updated. It automatically updates the Real DOM.
 
 In fact, this is why *React is called React*. Because the Real DOM is automatically updated.
 
@@ -89,7 +89,7 @@ Then, create a new React project with Typescript in :
 npx create-react-app artists-book --template typescript
 ```
 
-To verify that everything is ok, run the followinf commands :
+To verify that everything is ok, run the following commands :
 
 ```shell
 # Move to your project
@@ -335,7 +335,7 @@ Now that the foundations are laid for your project, it's time to start the front
 
 ***Before going further, be aware of this :***
 
-***As you are using Chakra UI, you mustn't use HTML tags. In fact, Chakra UI makes available plenty of componenents, such as Button, Box, Flex, Stack, ... You can find all the list [here](https://chakra-ui.com/docs/getting-started) on the left.***
+***As you are using Chakra UI, you mustn't use HTML tags. In fact, Chakra UI makes available plenty of components, such as Button, Box, Flex, Stack, ... You can find all the list [here](https://chakra-ui.com/docs/getting-started) on the left.***
 
 ***It's important to take at least 20 minutes to read this list, it will save you a lot of time.***
 
@@ -503,7 +503,7 @@ Now that you can list some artists, what if you can add artists ?
 
 As you can notice, your `Add an artist` button does nothing for now.
 
-Let's add artists in a cool way :sunglasses: : when this button is clicked, a `modal` appears with a form to create an artist.
+Let's add artists in a cool way :sunglasses:: when this button is clicked, a `modal` appears with a form to create an artist.
 
 **Constraints :**
 - You must create the file `src/components/Modal/AddArtistModal.tsx` with the `modal` to add an artist inside, called in `src/components/Button/AddArtistButton.tsx`.
