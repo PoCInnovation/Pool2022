@@ -332,6 +332,8 @@ to correctly complete this exercice.
 
 ## Step 8 - Server's bodyguard
 
+> This exercice is not usefull, please go the further step
+
 It's important to know what kind of data are sent to your API. This will
 help you to keep an API resilient and secured.
 
@@ -367,7 +369,7 @@ func Logger() gin.HandlerFunc {
 }
 ```
 
-- Create a `middlewares` mackage, containing the `CheckPalindrome` function.
+- Create a `middlewares` package, containing the `CheckPalindrome` function.
 > Here's [how to validate body with gin](https://github.com/gin-gonic/gin#model-binding-and-validation).\
 > If the body is invalid, return the right error code with an explicit error message.
 
