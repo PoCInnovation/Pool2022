@@ -52,7 +52,7 @@ type User struct {
   Password  string
 }
 
-var Users := User[]{}
+Users := []User{}
 ```
 
 - Create a **POST** route `/signup-session`
