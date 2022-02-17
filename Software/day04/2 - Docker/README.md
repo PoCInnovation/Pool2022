@@ -70,7 +70,7 @@ We can now install docker engine and docker-compose
 
 ```shell
 # Add docker repository to your package manager
-sudo dnf -y install dnf-plugin-core
+sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
 
 # Install Docker
