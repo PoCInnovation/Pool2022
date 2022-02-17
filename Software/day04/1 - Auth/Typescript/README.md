@@ -80,7 +80,7 @@ interface User {
 
 :bulb: To win time, the database will be a simple array stored in RAM.
 
-If it's not already done, create a folder `endoints` in `src`. This is
+If it's not already done, create a folder `endpoints` in `src`. This is
 where you will put all your endpoints related to cookies.
 
 Now create a file `cookies.ts` and initialize your ephemeral database.
