@@ -7,17 +7,14 @@ A simple Node REST API to manage artists and musics :rocket:
 Run the following commands :
 ```bash
 # Copy the required env variables inside the file .env
-cp .env.example .env
+cp .envrc.example .envrc
 
 ###
 # Please update the .env file before going further !
 ###
 
-# To make sure your environment is loaded
-direnv allow .env
-
-# If the previous command didn't work
-source .env
+# To make sure your environment variables are loaded
+direnv allow .
 
 # Build the API images and start the containers
 docker-compose up

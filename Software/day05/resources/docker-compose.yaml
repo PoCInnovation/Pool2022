@@ -5,7 +5,7 @@ services:
     container_name: day05-backend
     build: backend
     env_file:
-      - .env
+      - .envrc
     environment:
       - API_HOST=0.0.0.0
       - DB_URL=${DB_URL}
@@ -34,7 +34,7 @@ services:
     image: timothyjmiller/prisma-studio:latest
     restart: unless-stopped
     env_file:
-     - .env
+     - .envrc
     environment:
       - POSTGRES_USERNAME=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASSWORD}
