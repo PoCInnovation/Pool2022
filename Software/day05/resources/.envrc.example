@@ -1,0 +1,16 @@
+# Backend
+export API_HOST=localhost
+export API_PORT=8080
+export CLIENT_URL=http://localhost:---FILL ME--
+export JWT_SECRET=--FILL ME--
+
+# Database
+export DB_USER=--FILL ME--
+export DB_PASSWORD=--FILL ME--
+export DB_HOST=--FILL ME--
+export DB_PORT=--FILL ME--
+export DB_NAME=--FILL ME--
+export DB_URL=postgresql://$DB_USER:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME
+
+# Studio
+export PRISMA_STUDIO_PORT=--FILL ME--
