@@ -188,7 +188,7 @@ html {
 }
 ```
 
-- Create the file `src/index.ts` and fill it with :
+- Create the file `src/theme/index.ts` and fill it with :
 ```ts
 import { extendTheme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
