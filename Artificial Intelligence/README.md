@@ -72,6 +72,6 @@ In groups of 2 to 6, you will have to create an artificial intelligence applicat
 | :---: | :---: |
 
 | [<img src="https://github.com/MrSIooth.png?size=85" width=85><br><sub>Victor GUYOT</sub>](https://github.com/MrSIooth) | [<img src="https://github.com/RedGinor.png?size=85" width=85><br><sub>Mark BEKKER</sub>](https://github.com/RedGinor) | [<img src="https://github.com/Nellousan.png?size=85" width=85><br><sub>Nell FAUVEAU</sub>](https://github.com/Nellousan) 
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: |
 
 > Made with :heart: by PoC
