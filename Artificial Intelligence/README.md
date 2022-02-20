@@ -50,7 +50,7 @@ Then you will discover the field of DevOps applied to Machine Learning on : MLOp
 
 **Modules:**
 
-- [Neural Network PyTorch](./day03/1.neural-nerwork-pytorch/)
+- [Neural Network PyTorch](./day03/1.neural-network-pytorch/)
 - [CNN PyTorch](./day03/2.CNN-pytorch/)
 - [XRAI-analyzer](./day03/3.XRAI-analyzer/)
 - [MLOps](./day03/4.MLOps/)
