@@ -19,6 +19,12 @@ This choice will organise your week. You will learn something new in the choosen
 - [Typescript](./day01/Typescript/)
 - [Golang](./day01/Golang/)
 
+**Talks:**
+
+- Open source and contribution, a
+winning combination - [Christophe VILLENEUVE](https://www.linkedin.com/in/christophe-villeneuve-3a68743/?originalSubdomain=fr)
+
+
 ## :information_source: Day 2 - Database
 
 You will discover the relational databases through the managment of a PostgreSQL database in two ways : by hand with SQL queries and with an Object Relational Database (ORM).
@@ -28,12 +34,21 @@ You will discover the relational databases through the managment of a PostgreSQL
 - [Typescript](./day02/2%20-%20ORM/Typescript/)
 - [Golang](./day02/2%20-%20ORM/Golang/)
 
+**Talks:**
+- You underestimate the databases - [Lucas SANTONI](https://www.linkedin.com/in/lucas1337/?originalSubdomain=fr)
+- Maria DB : a database
+NewSQL - [Christophe VILLENEUVE](https://www.linkedin.com/in/christophe-villeneuve-3a68743/?originalSubdomain=fr)
+
+
 ## :computer: Day 3 - API REST
 
 You will discover core concepts of the web and the basics of HTTP servers by building a REST API.
 
 - [Typescript](./day03/Typescript/)
 - [Golang](./day03/Golang/)
+
+**Talks:**
+- What makes a developer great ? - [Sam ALBA](https://www.linkedin.com/in/samalba/)
 
 ## :policeman: Day 4 - Authentification & Docker
 
@@ -47,6 +62,10 @@ The advancement of cloud and distributed infrastructures has exploded in the las
 
 - [Docker](./day04/2%20-%20Docker/)
 
+**Talks:**
+- How and why should we scale
+? - [Aymeric BEUDAERT](https://www.linkedin.com/in/aymeric-beudaert-138351102/?originalSubdomain=fr)
+
 ## :rose: Day 5 - User Interface
 
 During 4 days, you've worked on the `backend` part of an application. This day you will learn how to build the `frontend` part : the User Interface. You're free to choose React for web applications, or Flutter for mobile applications.
@@ -54,9 +73,18 @@ During 4 days, you've worked on the `backend` part of an application. This day y
 - [React](./day05/React/)
 - [Flutter](./day05/Flutter/)
 
+**Talks:**
+- The keys to successful management of
+project management - [Nicolas RUFFEL]()
+- Frontend: the basics of the
+user interface - [Nils CAMBRELENG](https://www.linkedin.com/in/nilscam/?originalSubdomain=fr)
+
 ## :alarm_clock: Rush
 
 By groups of 3 to 5, you will have to create a clone of Airbnb, Deezer, Linkedin, Instagram, ...
+
+**Talks:**
+- The steps to create a startup - [Thomas dE PHUOC](https://www.linkedin.com/in/tdephuoc/?originalSubdomain=fr)
 
 ## Authors
 
