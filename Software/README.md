@@ -75,7 +75,7 @@ During 4 days, you've worked on the `backend` part of an application. This day y
 
 **Talks:**
 - The keys to successful management of
-project management - [Nicolas RUFFEL]()
+project management - [Nicolas RUFFEL](https://www.linkedin.com/company/tennaxia/?originalSubdomain=fr)
 - Frontend: the basics of the
 user interface - [Nils CAMBRELENG](https://www.linkedin.com/in/nilscam/?originalSubdomain=fr)
 
