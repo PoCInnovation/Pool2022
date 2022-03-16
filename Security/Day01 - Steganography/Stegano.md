@@ -1,4 +1,4 @@
-# Correction
+# Steganography
 
 ## Newbies
 
