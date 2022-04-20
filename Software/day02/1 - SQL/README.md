@@ -139,7 +139,7 @@ This day is in two part, so you will push your work in the directory `SQL`
 mkdir -p day02/SQL
 ```
 
-Create a file `queries.md` in wich you will write every queries to keep a track :
+Create a file `queries.md` in which you will write every queries to keep a track :
 
 ```shell
 touch queries.md

@@ -22,7 +22,7 @@ To use Flutter on Visual Studio Code you will need to use the [Flutter extension
 
 If you want to use another IDE that does not have a plugin for Flutter you can always use the [flutter commands](https://docs.flutter.dev/reference/flutter-cli)
 
-Even if you use other IDE than Android Studio, you need to install Android Studio.
+Even if you use another IDE than Android Studio, you need to install Android Studio.
 
 To launch your application you will need a smartphone emulator, in other words a virtual smartphone in your PC, which you can create and launch from Android Studio.
 

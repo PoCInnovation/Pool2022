@@ -81,7 +81,7 @@ Upload your data to a remote storage (S3, Gdrive, SSH, etc) and share it across 
 <br/>
 
 ## Data exploration
-Now that you have your data you should take the time to explore it, to understand its meaning and determine wich column will be usefull for your predictions.
+Now that you have your data you should take the time to explore it, to understand its meaning and determine which column will be usefull for your predictions.
 
 You're totally free regarding the tools to use, if you want to use a notebook, R-lang, or a magnifying glass, do it!
 
@@ -95,7 +95,7 @@ You should be able to:
 <br/>
 
 ## Drop columns
-Your determined wich columns to drop, now let's create a python script that will load your csv file, drop the columns you decided to and save the resulting DataFrame into a filed name whatever you want.
+Your determined which columns to drop, now let's create a python script that will load your csv file, drop the columns you decided to and save the resulting DataFrame into a filed name whatever you want.
 
 <br/>
 
@@ -222,12 +222,12 @@ here is where come in place the logs! Let's use hydra to had logs to your pipeli
 
 <br/>
 
-You may not know but there are tools to help choose wich hyperparams to use. One I personally recommend is [Optuna](https://optuna.org) and the good new is that Hydra support Optuna as a [buil-in package](https://hydra.cc/docs/plugins/optuna_sweeper/)!
+You may not know but there are tools to help choose which hyperparams to use. One I personally recommend is [Optuna](https://optuna.org) and the good new is that Hydra support Optuna as a [buil-in package](https://hydra.cc/docs/plugins/optuna_sweeper/)!
 
 You should give it a try!
 
 ## Conclusion
 
-Congratulations, you have now a clean and well structured project! But you still need to do a lot of things to be able to deploy your model like: Pruning, freezing, quantization, serving...
+Congratulations, you now have a clean and well structured project! But you still need to do a lot of things to be able to deploy your model like: Pruning, freezing, quantization, serving...
 
 You are free to do it!
