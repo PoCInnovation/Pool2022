@@ -54,7 +54,7 @@ npm -v
 You certainly know [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript),
 for several years, Javascript was very popular in Software world, mostly for
 web development.<br>
-At the beginning, it was created to make web page interactive. No you can
+At the beginning, it was created to make web page interactive. Now you can
 code almost everything in Javascript, even backend and standalone app thanks
 NodeJS.
 
@@ -71,7 +71,7 @@ Typescript solves recurrent problems of Javascript :
 - Typescript has a strong static type system.
 - Auto-completion is much faster and accurate.
 - Codebase are cleaner and better defined.
-- Objet oriented programming is easier in Javascript than Typescript.
+- Objet oriented programming is easier in Typescript than Javascript.
 - Frameworks and applications much more resilient and maintainable.
 
 :warning: Even if Typescript is better than Javascript, don't forget
@@ -232,7 +232,7 @@ Here's an example for the following input: `[1, 0, 19, 17, 16, 8, 13, 24]`.
 0 - 8 - 16 - 24
 ```
 
-You can try other combinations by manually change your code or, you can write **tests**.
+You can try other combinations by manually changing your code or, you can write **tests**.
 
 ### Test like a pro
 
@@ -775,7 +775,7 @@ As you seen in the prototype, you will use a [`callback`](https://developer.mozi
 
 > Even if you know `async/await` and could do it with, it's important to understand callback.
 
-Now that you have update `repository`, you must update other part of your mvc.
+Now that you have updated `repository`, you must update other part of your mvc.
 
 #### View
 

@@ -30,7 +30,7 @@ It's a Javascript function that returns a Javascript object representing a DOM e
 
 All these DOM elements in memory compose the Virtual DOM.
 
-> DOM stands for Document Object Model, wich is the HTML representation of a web page.
+> DOM stands for Document Object Model, which is the HTML representation of a web page.
 > As a consequence, a DOM element is a part of the HTML representation of a web page.
 
 This Virtual DOM is a copy of the Real DOM.
@@ -136,7 +136,7 @@ Remove some files to have the following glossary :
   ├──README.md          # Don't hesitate to read it ! It contains usefull commands
   └──tsconfig.json      # TypeScript configuration file
 ```
-> It's ok if some errors appear, it will be fix.
+> It's ok if some errors appear, it will be fixed.
 
 Then follow these steps. It will setup your project with [Chakra UI](https://chakra-ui.com), a component librairy to help you to build your React projects, [ESlint](https://eslint.org) and [Prettier](https://prettier.io). It will also give you a good architecture.
 
@@ -413,7 +413,7 @@ Now that you have your Home page, it's time to have Register and Login pages wit
 
 ## Step 3 - What if you change the screen size ?
 
-Now that you have several pages, its time to make shure that they are responsive on different screen size.
+Now that you have several pages, its time to make sure that they are responsive on different screen size.
 
 To do so, open the console and play with the screen width and height.
 
@@ -421,7 +421,7 @@ If some elements are not responsive, fix it !
 
 **Requirements :**
 - Check :
-  - The arragement of the elements.
+  - The arrangement of the elements.
   - The spaces between elements.
   - The text size (especially for titles and subtitles)
   - ...
@@ -431,7 +431,7 @@ If some elements are not responsive, fix it !
 
 ## Step 4 - Testing time
 
-You have now three responsive pages.
+You now have three responsive pages.
 
 Before going further, it's a good practice to create [end-to-end](https://css-tricks.com/front-end-testing-is-for-everyone/#h-end-to-end-e2e-testing) tests.
 

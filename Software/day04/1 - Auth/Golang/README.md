@@ -105,7 +105,7 @@ Let's create an authentication system with JWT.
 
 To do so:
 - Add a package tout generate the JWT : `go get -u github.com/dgrijalva/jwt-go`
-- Create the structure `UserJWT` wich mocks a simple database, stored in your RAM
+- Create the structure `UserJWT` which mocks a simple database, stored in your RAM
 
 ```go
 type UserJWT struct {
@@ -178,7 +178,7 @@ We will use google for this exercise and passport to simplify the process:
 - Add `oauth2` to the dependences: `go get -u golang.org/x/oauth2`
 > **Take a moment to read the [documentation](https://pkg.go.dev/golang.org/x/oauth2/google)**.
 
-- Create an object `userOAuth` wich mocks a simple database, stored in your RAM
+- Create an object `userOAuth` which mocks a simple database, stored in your RAM
 
 ```go
 type UserOAuth struct {
