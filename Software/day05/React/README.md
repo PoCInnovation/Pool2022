@@ -450,7 +450,7 @@ To do that, you will use [Cypress](https://www.cypress.io).
   - One `Login` `button`.
   - One `Register` `button` redirecting to `/register`.
 - Add the following `scripts` to the file `package.json` :
-  - `cypress:open`, running cypress with de GUI.
+  - `cypress:open`, running cypress with the GUI.
   - `cypress:run`, running cypress without the GUI.
 
 **Constraints :**
