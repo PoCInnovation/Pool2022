@@ -371,7 +371,7 @@ Well done ! You have created your first React Component !
 
 ⚠️ ✋ ⚠️ ✋ ⚠️ ***Very Important*** ⚠️ ✋ ⚠️ ✋ ⚠️
 
-***From now, you free to add any element you want in your UI as long a you have the requirements. Chakra UI is a really powerfull tool, have fun with it !***
+***From now, you free to add any element you want in your UI as long as you have the requirements. Chakra UI is a really powerfull tool, have fun with it !***
 
 ***Don't hesite to ask us questions about design, about ways to code frontend elements, or to valid your architecture.***
 
