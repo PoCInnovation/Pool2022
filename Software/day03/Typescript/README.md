@@ -349,7 +349,7 @@ Create an endpoint `/repeat-all-my-queries` in the file `server.ts` with
 a handler on method `GET`.
 
 This handler must retrieves all [query parameters](https://en.wikipedia.org/wiki/Query_string)
-znd return an array of object containing the `key` and the `value` of each
+and return an array of object containing the `key` and the `value` of each
 query parameter.
 
 Here's the shape of the data return
