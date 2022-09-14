@@ -140,7 +140,7 @@ Update the `.env` file with the following variables :
 - `DB_PORT`: Listening port of your PostgreSQL server, by default it's `5432`
 - `DB_NAME`: Name of your database
 - `DB_URL`: Connection url, it's composed of all information defined before.
-Set it to : `postgresql://$DB_USER:$DB_PASS@$DB_HOST:$DB_PORT/$DB_NAME)`
+Set it to: `postgresql://$DB_USER:$DB_PASS@$DB_HOST:$DB_PORT/$DB_NAME)`
 
 > You can create multiple database in a single PostgreSQL server, so it's
 > important to specify a name.
@@ -156,7 +156,7 @@ effort.
 > It's common to add external dependencies' setup directly into the 
 > `package.json`.
 
-Add the following `script` to your `package.json` : 
+Add the following `script` to your `package.json`: 
 
 ```json
 "dev:db": "docker run --name ${DB_NAME} -e POSTGRES_PASSWORD=${DB_PASS} -e POSTGRES_USER=${DB_USER} -e POSTGRES_DB=${DB_NAME} -p ${DB_PORT}:${DB_PORT} -d postgres:alpine",
@@ -536,7 +536,7 @@ You are used to it, write Jest test to verify that everything work well :rocket:
 
 ## Step 7 - Active artists
 
-Finally, we are near the end! Only one entity remains : `Music`.
+Finally, we are near the end! Only one entity remains: `Music`.
 
 This step is intentionally less guided, if you reached it, you should
 have understood everything about relational database, crud and how you should
@@ -597,7 +597,7 @@ Have fun!
 Some link to additional resources and cool stuff
 
 - [Visualize your data with Prisma studio](https://www.prisma.io/studio)
-- [A classes based ORM : TypeORM](https://typeorm.io/#/)
+- [A classes based ORM: TypeORM](https://typeorm.io/#/)
 - [ORM vs raw SQL](https://levelup.gitconnected.com/raw-sql-vs-query-builder-vs-orm-eee72dbdd275)
 - [Prisma Blog](https://www.prisma.io/blog/)
 - [Comparing Prisma](https://www.prisma.io/docs/concepts/more/comparisons)

@@ -22,7 +22,7 @@ If you have any concerns, talk to a supervisor.
 
 ## Resources :book:
 
- - [Article : Multinomial Naive Bayes explained](https://www.mygreatlearning.com/blog/multinomial-naive-bayes-explained/)
- - [Video : Multinomial Naive Bayes, clearly explained!!!](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
- - [Video : Gaussian Naive Bayes](https://www.youtube.com/watch?v=H3EjCKtlVog)
+ - [Article: Multinomial Naive Bayes explained](https://www.mygreatlearning.com/blog/multinomial-naive-bayes-explained/)
+ - [Video: Multinomial Naive Bayes, clearly explained!!!](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
+ - [Video: Gaussian Naive Bayes](https://www.youtube.com/watch?v=H3EjCKtlVog)
  

@@ -14,17 +14,17 @@
 
 *[React](https://en.reactjs.org) is a Javascript librairy to build user interfaces.*
 
-**What is a user interface ?**
+**What is a user interface?**
 
 A user interface (UI) is the point at which humans interact with a computer, a web site or an application.
 
 For instance, your terminal is a user interface.
 
-**What does this Javascript library allow us to do ?**
+**What does this Javascript library allow us to do?**
 
 Thanks to React, you can build [*React Components*](https://en.reactjs.org/docs/components-and-props.html).
 
-**What is a React component ?**
+**What is a React component?**
 
 It's a Javascript function that returns a Javascript object representing a DOM element in memory.
 
@@ -42,15 +42,15 @@ In fact, this is why *React is called React*. Because the Real DOM is automatica
 
 When you create a React component, you can specify when its states should change.
 
-This is the magic. You no more need to update the Real DOM by hand ! 🪄
+This is the magic. You no more need to update the Real DOM by hand! 🪄
 
 > Maybe you don't understand why this is awesome. It's because you haven't played yet with the Real DOM.\
 > If you want, at the end of the day, build the same application without React. Then you will undertand. 👍
 > Here's the [official DOM documentation](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction).
 
-**How to use React the right way ?**
+**How to use React the right way?**
 
-***Build a tree of components ! Build a React Component for each element of your UI !***
+***Build a tree of components! Build a React Component for each element of your UI!***
 
 Here's an example :
 <div align="center">
@@ -65,7 +65,7 @@ Each number corresponds to a React Component.
 If you follow this until the end, you will get a [*single page app*](https://www.bloomreach.com/en/blog/2018/what-is-a-single-page-application).
 > This means that your app is a single React Component, composed of React Components.
 
-**Okay, this is great for developers ! How about users ?**
+**Okay, this is great for developers! How about users?**
 
 Building the Real DOM takes time.
 
@@ -99,7 +99,7 @@ cd artists-book
 npm start
 ```
 
-If you get a page with de React's logo spinning, then you can continue !
+If you get a page with de React's logo spinning, then you can continue!
 
 ***
 
@@ -133,7 +133,7 @@ Remove some files to have the following glossary :
   ├──.gitignore         # Tells git to ignore some files
   ├──packge-lock.json   # Dependencies manager
   ├──package.json       # Package manager
-  ├──README.md          # Don't hesitate to read it ! It contains usefull commands
+  ├──README.md          # Don't hesitate to read it! It contains useful commands
   └──tsconfig.json      # TypeScript configuration file
 ```
 > It's ok if some errors appear, it will be fixed.
@@ -325,9 +325,9 @@ npm run lint
 npm start
 ```
 
-You can continue if they all succeed !
+You can continue if they all succeed!
 
-Now that the foundations are laid for your project, it's time to start the frontend development !
+Now that the foundations are laid for your project, it's time to start the frontend development!
 
 ***
 
@@ -363,7 +363,7 @@ The first step is to create the Home page.
 - Make sure you understood everything in the Clean Up.
 - You should have a look to the Chakra UI [Text](https://chakra-ui.com/docs/typography/text) component.
 
-Well done ! You have created your first React Component !
+Well done! You have created your first React Component!
 
 > A ***great idea*** is to create a folder `src/components` to store reusable components.
 
@@ -371,7 +371,7 @@ Well done ! You have created your first React Component !
 
 ⚠️ ✋ ⚠️ ✋ ⚠️ ***Very Important*** ⚠️ ✋ ⚠️ ✋ ⚠️
 
-***From now, you free to add any element you want in your UI as long as you have the requirements. Chakra UI is a really powerfull tool, have fun with it !***
+***From now, you free to add any element you want in your UI as long as you have the requirements. Chakra UI is a really powerful tool, have fun with it!***
 
 ***Don't hesite to ask us questions about design, about ways to code frontend elements, or to valid your architecture.***
 
@@ -382,7 +382,7 @@ Well done ! You have created your first React Component !
 
 ## Step 2 - Your first routes
 
-Now that you have your Home page, it's time to have Register and Login pages with the following urls : `/register` and `/login`.
+Now that you have your Home page, it's time to have Register and Login pages with the following urls: `/register` and `/login`.
 
 **Requirements :**
 - The Home page must contain :
@@ -411,13 +411,13 @@ Now that you have your Home page, it's time to have Register and Login pages wit
 - You should have a look to the React [State Hook](https://en.reactjs.org/docs/hooks-state.html).
 - Check the [web console](https://developer.mozilla.org/en-US/docs/Tools/Web_Console) to see the logs (Ctrl + Shift + I).
 
-## Step 3 - What if you change the screen size ?
+## Step 3 - What if you change the screen size?
 
 Now that you have several pages, its time to make sure that they are responsive on different screen size.
 
 To do so, open the console and play with the screen width and height.
 
-If some elements are not responsive, fix it !
+If some elements are not responsive, fix it!
 
 **Requirements :**
 - Check :
@@ -427,7 +427,7 @@ If some elements are not responsive, fix it !
   - ...
 
 **Tips :**
-- Here is [how to do](https://chakra-ui.com/docs/features/responsive-styles) with Chakra UI. As you can see, the setup has already been done !
+- Here is [how to do](https://chakra-ui.com/docs/features/responsive-styles) with Chakra UI. As you can see, the setup has already been done!
 
 ## Step 4 - Testing time
 
@@ -463,15 +463,15 @@ To do that, you will use [Cypress](https://www.cypress.io).
 
 ## Step 5 - Your first dashoard
 
-Now that you have solid foundations, it's time to go further !
+Now that you have solid foundations, it's time to go further!
 
-You have a Home page, a Register page and a Login page. What's missing ? A Dashboard page !
+You have a Home page, a Register page and a Login page. What's missing? A Dashboard page!
 
 Let's now play with artists :rocket:
 
 To see what is an `Artist`, check the [API doc](../resources/README.md).
 
-Create a Dashboard page listing some artists, with the following url : `/dashboard`.
+Create a Dashboard page listing some artists, with the following url: `/dashboard`.
 
 :warning: ***For now, any data is stored inside a React useState. There is no real database. No interaction with the API.*** :warning:
 
@@ -495,11 +495,11 @@ Create a Dashboard page listing some artists, with the following url : `/dashboa
 **Tips :**
 - You should have a look to the Chakra UI [Grid](https://chakra-ui.com/docs/layout/grid) component.
 - You should have a look to the Chakra UI [Navbar](https://chakra-templates.dev/navigation/navbar) and [Cards](https://chakra-templates.dev/components/cards) templates.
-> Be carefull with the Chakra UI templates. It's just to give you an idea of what you can do. ***Do not copy-paste code.***
+> Be careful with the Chakra UI templates. It's just to give you an idea of what you can do. ***Do not copy-paste code.***
 
 ## Step 6 - Become a true Frontend Developper
 
-Now that you can list some artists, what if you can add artists ?
+Now that you can list some artists, what if you can add artists?
 
 As you can notice, your `Add an artist` button does nothing for now.
 
@@ -515,19 +515,19 @@ Let's add artists in a cool way :sunglasses:: when this button is clicked, a `mo
 
 ⚠️ ✋ ⚠️ ✋ ⚠️ ***Very Important*** ⚠️ ✋ ⚠️ ✋ ⚠️
 
-First well done ! You've worked hard to be here :clap:
+First well done! You've worked hard to be here :clap:
 
-It's time to give you a gift : an advice.
+It's time to give you a gift: an advice.
 
 One of the most difficult thing when you build a User Interface with React (and other librairy of components / frameworks), is to manage the dozens of components you create.
 
-But why is it difficult ?
+But why is it difficult?
 
 It's because your components are not ***stateless***. ***There is logic inside them***. For instance, sometimes you will copy-paste a whole component, just to change a condition, a function, ...
 
 It's really difficult to build components that you can re-use in different parts of your project.
 
-So how can you resolve this problem ?
+So how can you resolve this problem?
 
 One of the best thing to do is to build ***stateless components***.
 
@@ -535,7 +535,7 @@ Keep your logic, your function calling APIs, ... the higher in your tree compone
 
 It might be not important, but I promise that it will help you so much.
 
-To set this up, here is a little challenge you can take : all your logic, keep it inside the pages components. Only here.
+To set this up, here is a little challenge you can take: all your logic, keep it inside the pages components. Only here.
 
 If you want to go further in frontend development, follow this principle as much as you can.
 
@@ -584,7 +584,7 @@ Let's call the API when a user register.
 Now that you know how to call an API from a User Interface, it's time to have a complete interaction with it.
 
 **Requirements :**
-- On successfull login, redirect to the Dahsboard page.
+- On successful login, redirect to the Dahsboard page.
 - The user must be notify with the **appropriate message** on login.
 - The user must be authentificate on the Dashboard page. If not, redirect to the Home page.
 - The user must be notify with the **appropriate message** on artist creation.
@@ -595,9 +595,9 @@ Now that you know how to call an API from a User Interface, it's time to have a 
 **Tips :**
 - You already have what you need.
 
-## Step 9 - What about musics ?
+## Step 9 - What about musics?
 
-Well, we have artists. What about musics ?
+Well, we have artists. What about musics?
 
 Create an Artist page listing all the artist's musics.
 
@@ -637,11 +637,11 @@ Implement a Dark and Light Mode thanks to [Chakra UI](https://chakra-ui.com/docs
 
 Storing a JWT inside the localStorage is a bad idea. Here is [how to solve this problem](https://www.codeheroes.fr/2020/06/20/securiser-une-api-rest-3-3-gestion-du-jwt-cote-client/).
 
-Your turn !
+Your turn!
 
 ### React Context
 
-What if you could share data between different components without passing parameters to them ?
+What if you could share data between different components without passing parameters to them?
 
 Well it's possible, it's called [React Context](https://en.reactjs.org/docs/context.html).
 

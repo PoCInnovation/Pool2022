@@ -34,7 +34,7 @@ class Neurone :
         d_l_d_i = (activation - target)
         self.grad_w = np.sum(inputs*(d_l_d_i*d_linear_d_input(pre_activation)))
         self.grad_b = np.sum(d_l_d_i*d_linear_d_input(pre_activation))
-    
+
     def resetGrad(self):
         self.grad_w = np.zeros((self.nb_features, 1))
         self.grad_b = np.zeros(1)
@@ -57,4 +57,3 @@ if __name__=='__main__':
             neurone.b = neurone.b - (LR * neurone.grad_b)
             neurone.resetGrad()
     print("End of training")
-

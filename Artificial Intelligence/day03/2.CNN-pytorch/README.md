@@ -4,7 +4,7 @@ Welcome to the tenth module of the course. You must have already learned a lot. 
 
 ## Submit :trophy:
 
-Fill the notebook : ``convolutional_neural_network.ipynb``
+Fill the notebook: ``convolutional_neural_network.ipynb``
 
 To submit your work, think about pushing your changes. It is important to push so that we are able to assess participation.
 If you have any concerns, talk to a supervisor.

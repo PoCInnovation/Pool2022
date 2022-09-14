@@ -187,7 +187,7 @@ image of your language.
 ## Step 02 - Docker-compose
 
 In the previous step, you saw how to put your application in a container,
-it's time to go further : you will manage multiple containers with
+it's time to go further: you will manage multiple containers with
 [docker-compose](https://docs.docker.com/compose/).
 
 Create a directory `exo02`

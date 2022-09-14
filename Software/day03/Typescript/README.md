@@ -109,7 +109,7 @@ When your `server` is correctly initialize, launch it to listen on port `8080`.
 
 > We encourage you to display a message that display your server root
 > endpoint to easily reach it.\
-> For example : `server listening on http://localhost:8080/`
+> For example: `server listening on http://localhost:8080/`
 
 You must also define an endpoint `hello` reachable through the 
 [method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) `GET`.\
@@ -131,7 +131,7 @@ request. Generally used to store structured data in a given format
 - [`query`](https://en.wikipedia.org/wiki/Query_string): a string that
 extends the url to fill parameter of type `key/value`. Generally used to
 give additional information about the request.<br>
-For example : order of data return, max number of entities etc... It also
+For example: order of data return, max number of entities etc... It also
 used for [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization).
 - [`url param`](https://doriantaylor.com/policy/http-url-path-parameter-syntax): a dynamic
 string in the path. Generally used to select a resource directly from
@@ -170,7 +170,7 @@ for the method `GET`:
 
 If there is a message in the [query](https://www.educative.io/edpresso/what-is-reqquery-in-expressjs),
 return it with status `200`.<br>
-If there is no message : return `Bad Request` with status `400`.
+If there is no message: return `Bad Request` with status `400`.
 
 #### Param
 
@@ -339,11 +339,11 @@ on your server.
 You can also create an [environment](https://learning.postman.com/docs/sending-requests/managing-environments/)
 to manage your configuration.
 
-## Step 6 - Who use hard coded text ?
+## Step 6 - Who use hard coded text?
 
 It's important to transform data sent to the client to make the API easier to use.<br>
 With time, data took standard forms like `JSON` or `XML`. Here we will use
-the most popular : [`JSON`](https://en.wikipedia.org/wiki/JSON).
+the most popular: [`JSON`](https://en.wikipedia.org/wiki/JSON).
 
 Create an endpoint `/repeat-all-my-queries` in the file `server.ts` with
 a handler on method `GET`.
@@ -414,7 +414,7 @@ help you to keep an API resilient and secured.
 For example, if you send an empty body to the endpoint from step 7, you should
 get an error. That kind of issue is not suitable in a production API.
 
-To ensure API security, a system has been created : [`Middleware`](https://en.wikipedia.org/wiki/Middleware).
+To ensure API security, a system has been created: [`Middleware`](https://en.wikipedia.org/wiki/Middleware).
 
 Here's a code snippet of a middleware for an express API :
 
@@ -429,7 +429,7 @@ const myMiddleware = (req: Request, res: Response, next: NextFunction) => {
 }
 ```
 
-> Middleware can also be used for other purposes : logger, permissions 
+> Middleware can also be used for other purposes: logger, permissions 
 > management etc...
 
 To verify user inputs, we will use [Zod](https://github.com/colinhacks/zod) framework.<br>
@@ -441,7 +441,7 @@ Install Zod with the following command
 npm i zod
 ```
 
-To make it works, you'll need to add the following line in your `tsconfig.json`
+To make it work, you'll need to add the following line in your `tsconfig.json`
 
 ```json
 "strictNullChecks": true
@@ -498,7 +498,7 @@ be verified. But it can be useful to apply a logger middleware for instance.
 
 ## Step 9 - Automatic fortress
 
-Write middlewares is the best way to validate data sent to your handler, but
+Writing middlewares is the best way to validate data sent to your handler, but
 what if you have 10 endpoints to validate? You are not going to write
 one middleware for each schema. It could lead to error and more than that, 
 code duplication is never a good thing.
@@ -592,7 +592,7 @@ Let's create a file `serverLogger.ts` in the directory `src`.
 
 In it, export a [winston](https://github.com/winstonjs/winston) logger
 with the following properties :
-- The output format must be : `"[{timestamp}] [{severity}]": {message}`
+- The output format must be: `"[{timestamp}] [{severity}]": {message}`
 - Logs must be written to standard output and the file `/var/log/api.log`
 - Logs written in standard output must be colored
 
@@ -637,7 +637,7 @@ If you are still looking for exercices, here's four intermediate exercises.
 
 Yesterday you've learn to manipulate a database with Prisma. Today, you've learn to build an API with Express.
 
-What about mixing it ?
+What about mixing it?
 
 Expose yesterday's database with today's API.
 
@@ -703,7 +703,7 @@ feel natural compared to code.
 There are frameworks specialised in tests with code, with those, it
 becomes really easy to test the business logic of our projects.
 
-Let's write test suite with the most popular :  [`Jest`](https://jestjs.io).
+Let's write test suite with the most popular:  [`Jest`](https://jestjs.io).
 
 Setup Jest on your project and create a directory `tests` with a file `server.tests.ts`.
 
@@ -723,7 +723,7 @@ handles errors and works well.
 
 ## Additional resources
 
-- [API standard documentation : OpenAPI](https://www.openapis.org)
+- [API standard documentation: OpenAPI](https://www.openapis.org)
 - [GUI to write API documentation](https://stoplight.io)
 - [Swagger](https://swagger.io)
 - [Generate your boilerplate with NestJS](https://nestjs.com)

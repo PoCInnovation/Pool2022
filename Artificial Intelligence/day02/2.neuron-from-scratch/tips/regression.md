@@ -90,7 +90,7 @@ $f(100) = 250 * 100 + 10$ -> 250 010
 > In other words, depending on the two parameters $x$ and $y$, the line (actually the plane) of the predictions is in $R^3$. We can do a PCA (Principal Component Analysis) to reduce the dimension as seen before
 
 
-### representation of a true two-input logistic regression (different from a single input) with x and y predicted z : *$f(x, y) = z$*
+### representation of a true two-input logistic regression (different from a single input) with x and y predicted z: *$f(x, y) = z$*
 
 ![logistiquer3](./img/logistiquer3.png)
 

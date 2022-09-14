@@ -15,7 +15,7 @@ You will find the challenge in `Newbies.zip`
 `booh.zip`  
 
 ## B4by
-*Stop using Instagram filters ! Use some stegano filters !*
+*Stop using Instagram filters! Use some stegano filters!*
 
 `black.jpg`
 
@@ -31,7 +31,7 @@ You will find the challenge in `Newbies.zip`
 `doll.jpg`
 
 ## Lsb Sahara
-*You can do it !*
+*You can do it!*
 
 `lsb_sahara.png`
 
