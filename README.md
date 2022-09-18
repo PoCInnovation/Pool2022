@@ -1,4 +1,4 @@
-# :wave: Welcome to PoC Pools 2022 !
+# :wave: Welcome to PoC Pools 2022!
 
 PoC is a student innovation center.
 
@@ -7,7 +7,7 @@ Every year, we organize innovation weeks in a "pool" format to introduce people 
 Here are our fields :
 - 🧠 [Artificial Intelligence](./Artificial%20Intelligence/)
 - 🛠️ [Hardware & IoT]()
-- 🔑 [Security]()
+- 🔑 [Security](./Security/)
 - 💻 [Software](./Software/)
 - 🕸️ [Peer-To-Peer]()
 

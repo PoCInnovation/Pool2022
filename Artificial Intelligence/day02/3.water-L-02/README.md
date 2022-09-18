@@ -1,4 +1,4 @@
-# Module 7 : Analyse Water Anomaly :pencil:
+# Module 7: Analyse Water Anomaly :pencil:
 
 Hello, we need the skills you have acquired to respond to an emergency. The scientific team has just discovered an anomaly in the water of the rivers located near our center. There would be an abnormal decrease of the oxygen level in the water which would cause the death of the river species.
 
@@ -8,7 +8,7 @@ We count on you!
 
 --- 
 
-## Consigne : 
+## Instruction: 
 
 Refer to the file `water-L-O2.py`.
 

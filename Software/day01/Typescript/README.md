@@ -205,7 +205,7 @@ learn here.
 
 Let's start with a `sort numbers`!
 
-The goal is to : 
+The goal is to: 
 1. Sort a list in ascending order
 2. Remove odd numbers.
 3. Display the result.
@@ -350,7 +350,7 @@ npm run test
 ## Step 3 - Hello asynchronicity
 
 You should have understood Typescript core concept, now it's time for the
-most important concept and unfortunately, the hardest : **asynchronicity**.
+most important concept and unfortunately, the hardest: **asynchronicity**.
 
 ### Theory
 
@@ -372,7 +372,7 @@ To solve this issue, the [callback](https://codeburst.io/javascript-what-the-hec
 system appeared, unfortunately it creates new problems and huge codebase met
 the [callback hell](https://www.geeksforgeeks.org/what-is-callback-hell-in-node-js/).
 
-A new concept then appear and definitely saved codebase from the hell : [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises).
+A new concept then appear and definitely saved codebase from the hell: [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises).
 
 Promises allow a function to be waited before calling the next function.
 To use it, we use [async/await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function).
@@ -599,7 +599,7 @@ See you!
 ```
 
 To do this, we must build a program that follows a strong architecture.
-We will use one of the most popular : [MVC](https://www.calhoun.io/using-mvc-to-structure-go-web-applications/).
+We will use one of the most popular: [MVC](https://www.calhoun.io/using-mvc-to-structure-go-web-applications/).
 
 MVC stands for **Model - View - Controller**. It's an architecture where your
 code logic is split into smaller part to easily maintain and scale a project.
@@ -1006,7 +1006,7 @@ Below you'll see two bonus to challenge you.
 
 ### Music
 
-Your MVC currently manages only one resource : `Artist`.
+Your MVC currently manages only one resource: `Artist`.
 
 You can create a new resources named `Music` containing the following data :
 - `id`: Resource unique identifier

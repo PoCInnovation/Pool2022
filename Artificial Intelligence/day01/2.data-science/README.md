@@ -26,7 +26,7 @@ But you will also be able to select the best data to predict if a person would h
 
 ## Submit :trophy:
 
-Fill the notebook : ``Data science.ipynb``
+Fill the notebook: ``Data science.ipynb``
 
 To submit your work, think about pushing your changes. It is important to push so that we are able to assess participation.
 If you have any concerns, talk to a supervisor.

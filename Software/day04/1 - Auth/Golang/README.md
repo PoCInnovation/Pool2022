@@ -12,7 +12,7 @@ Authentication has many purpose in this world of servers and API.<br>
 Manage users' account, control activities and limit privileges required to
 know the user identity.
 
-Many system exist today, depending on the usage and the consumers : Api key,
+Many system exist today, depending on the usage and the consumers: Api key,
 sessions, OAuth and so on, you can multiply the way to fit with your product
 and give the best possible user experience.
 
@@ -21,7 +21,7 @@ usages.
 
 ## Step 0 - Setup
 
-Today, we'll get back to our Gin servers ! You can either start using the code you've written yesterday or start a brand-new project. It's up to you, you now know how do it :rocket:
+Today, we'll get back to our Gin servers! You can either start using the code you've written yesterday or start a brand-new project. It's up to you, you now know how do it :rocket:
 > In both cases, code inside the `day04/Auth` folder.
 
 - At the repository's root, create a `day04` and a `Auth` folders.
@@ -90,7 +90,7 @@ It's a signed electronic signature to verify consumer's identity. It's common
 to use [HMAC](https://en.wikipedia.org/wiki/HMAC) or [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) to sign tokens.<br>
 Those token can be store in cookies, but they can also be sent in a header.
 
-A JWT (JSON Web Token) is composed of 3 parts : `Header`, `Payload` and `Signature`.<br>
+A JWT (JSON Web Token) is composed of 3 parts: `Header`, `Payload` and `Signature`.<br>
 For more information about JWT, go to [jwt.io](https://jwt.io/introduction/). You can also use a [debugger](https://jwt.io/#debugger-io) to visualize the different parts of a jwt.
 
 The classic workflow for JWT authentication is :
@@ -104,7 +104,7 @@ The classic workflow for JWT authentication is :
 Let's create an authentication system with JWT.
 
 To do so:
-- Add a package tout generate the JWT : `go get -u github.com/dgrijalva/jwt-go`
+- Add a package tout generate the JWT: `go get -u github.com/dgrijalva/jwt-go`
 - Create the structure `UserJWT` which mocks a simple database, stored in your RAM
 
 ```go
@@ -195,7 +195,7 @@ var UsersOAuth := UserOAuth[]{}
 
 - Once you have retrieved the id of the connected user, save it in the db and return a JWT like in exercise 2 containing this id
 
-:warning: If the user's id already exists in db, you must return its information rather than create a new user with the same id each time !
+:warning: If the user's id already exists in db, you must return its information rather than create a new user with the same id each time!
 
 - Create a route **GET** `/me-oauth`
   - If the header stors a token

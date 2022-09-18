@@ -14,7 +14,7 @@ At the end of this part you will develop a neural network using PyTorch that wil
 
 ## Submit :trophy:
 
-Fill the notebook : ``src/neural_network_pytorch.ipynb``
+Fill the notebook: ``src/neural_network_pytorch.ipynb``
 
 To submit your work, think about pushing your changes. It is important to push so that we are able to assess participation.
 If you have any concerns, talk to a supervisor.

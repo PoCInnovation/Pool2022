@@ -60,7 +60,7 @@ When your `server` is correctly initialize, launch it to listen on port `8080`.
 
 > We encourage you to display a message that display your server root
 > endpoint to easily reach it.\
-> For example : `server listening on http://localhost:8080/`
+> For example: `server listening on http://localhost:8080/`
 
 You must also define an endpoint `hello` reachable through the 
 [method](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods) `GET`.<br>
@@ -89,7 +89,7 @@ func ApplyRoutes(r *gin.Engine) {
 }
 ```
 
-## Step 2 - Where are data ?
+## Step 2 - Where are data?
 
 ### Theory
 
@@ -101,7 +101,7 @@ request. Generally used to store structured data in a given format (`JSON`, `XML
 - [`query`](https://en.wikipedia.org/wiki/Query_string): a string that
 extends the url to fill parameter of type `key/value`. Generally used to
 give additional information about the request.<br>
-For example : order of data return, max number of entities etc... It also
+For example: order of data return, max number of entities etc... It also
 used for [SEO](https://en.wikipedia.org/wiki/Search_engine_optimization).
 - [`url param`](https://doriantaylor.com/policy/http-url-path-parameter-syntax): a dynamic
 string in the path. Generally used to select a resource directly from
@@ -124,7 +124,7 @@ for the method `GET`:
 
 If there is a message in the [query](https://github.com/gin-gonic/gin#querystring-parameters),
 return it with status `200`.<br>
-If there is no message : return `400`.
+If there is no message: return `400`.
 
 #### Param
 
@@ -141,7 +141,7 @@ for the method `POST`:
 
 If there is a `message` in the [`body`](https://github.com/gin-gonic/gin#try-to-bind-body-into-different-structs)
 of your request, return it with status `200`.<br>
-If there is no message : return `400`.
+If there is no message: return `400`.
 
 #### Header
 
@@ -150,7 +150,7 @@ for the method `GET`:
 
 If there is a [header](https://github.com/gin-gonic/gin#serving-data-from-reader)
 `X-Message`, return it with status `200`.<br>
-If there is no message : return `400`.
+If there is no message: return `400`.
 
 #### Cookie
 
@@ -159,7 +159,7 @@ for the method `GET`:
 
 If there is a [cookie](https://github.com/gin-gonic/gin#set-and-get-a-cookie)
 `message`, return it with status `200`.<br>
-If there is no message : return `400`.
+If there is no message: return `400`.
 
 > You can use [Postman](https://www.postman.com) or [Insomnia](https://insomnia.rest) to test your HTTP endpoints.
 
@@ -267,11 +267,11 @@ on your server.
 You can also create an [environment](https://learning.postman.com/docs/sending-requests/managing-environments/)
 to manage your configuration.
 
-## Step 6 -  Who use hard coded text ?
+## Step 6 - Who use hard coded text?
 
 It's important to transform data sent to the client to make the API easier to use.<br>
 With time, data took standard forms like `JSON` or `XML`. Here we will use
-the most popular : [`JSON`](https://en.wikipedia.org/wiki/JSON).
+the most popular: [`JSON`](https://en.wikipedia.org/wiki/JSON).
 
 Create an endpoint `/repeat-all-my-queries` with a handler on method `GET`.
 
@@ -332,7 +332,7 @@ to correctly complete this exercice.
 
 ## Step 8 - Server's bodyguard
 
-> This exercice is not usefull, please go the further step
+> This exercice is not useful, please go the further step
 
 It's important to know what kind of data are sent to your API. This will
 help you to keep an API resilient and secured.
@@ -340,9 +340,9 @@ help you to keep an API resilient and secured.
 For example, if you send an empty body to the endpoint from step 7, you should
 get an error. That kind of issue is not suitable in a production API.
 
-To ensure API security, a system has been created : [`Middleware`](https://en.wikipedia.org/wiki/Middleware).
+To ensure API security, a system has been created: [`Middleware`](https://en.wikipedia.org/wiki/Middleware).
 
-> Middleware can also be used for other purposes : logger, permissions management etc...
+> Middleware can also be used for other purposes: logger, permissions management etc...
 
 Here's a code snippet of a [middleware for an gin API](https://github.com/gin-gonic/gin#custom-middleware) :
 
@@ -403,7 +403,7 @@ func ApplyRoutes(r *gin.Engine) error {
 }
 ```
 
-Then create these files : `routes/health.go`, `hello.go`, `palindrome.go`, `repeat.go`.
+Then create these files: `routes/health.go`, `hello.go`, `palindrome.go`, `repeat.go`.
 
 Now move your endpoints into corresponding files and create the required functions.
 > `ApplyRoutes` should be the only exported function.\
@@ -438,7 +438,7 @@ Here is [how to write a tests suite](https://kpat.io/2019/06/testing-with-gin/) 
 
 Yesterday you've learn to manipulate a database with Ent. Today, you've learn to build an API with Gin.
 
-What about mixing it ?
+What about mixing it?
 
 Expose yesterday's database with today's API.
 

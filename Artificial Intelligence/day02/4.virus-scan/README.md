@@ -1,4 +1,4 @@
-# Module 8 : Analyse Virus :pencil:
+# Module 8: Analyse Virus :pencil:
 
 Hello technical team, the hour is serious we know that we solicit you enormously but your work is useful and contributes to the survival of humanity!
 
@@ -6,7 +6,7 @@ We have detected a new virus capable of accelerating heart problems. We are cond
 
 We are counting on you!
 
-## Instruction : 
+## Instruction: 
 
 Refer to the file maxi_neurone.py 
 

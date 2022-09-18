@@ -79,11 +79,11 @@ Start Datagrip and create a new `Data Source` of type `PostgreSQL`.
 
 Here's the information to fill in the form
 
-- Database name : `my_database`
-- Username : `root`
-- Password : `password`
-- Host : `localhost`
-- Port : `5432`
+- Database name: `my_database`
+- Username: `root`
+- Password: `password`
+- Host: `localhost`
+- Port: `5432`
 
 > You will certainly have to download the PostgreSQL driver on your first connection.
 
@@ -214,7 +214,7 @@ displayed in ascending order.
 
 ## Step 5 - Rap Game
 
-You have certainly noticed, there are several kind of musics related to rap : 
+You have certainly noticed, there are several kind of musics related to rap: 
 the `rap` and `hip-hop/rap`.
 
 We would like to organize a concert with all rappers in our database, but

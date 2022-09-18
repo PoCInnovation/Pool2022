@@ -1,10 +1,10 @@
-# Module 6 : Neuron from scratch :pencil:
+# Module 6: Neuron from scratch :pencil:
 
-Bravo ! Here you are in the heart of the matter, we are going to create our first intelligent neuron! 
+Bravo! Here you are in the heart of the matter, we are going to create our first intelligent neuron! 
 
 To do this, we are going to do things right. In this exercise, you are going to create a "neuron" class that you can reuse to make AI.   
 
-## Instruction : 
+## Instruction: 
 
 Refer to the file my_neuron.py 
 

@@ -57,7 +57,7 @@ Here's an exhaustive list of Golang killer feature :
 
 ### Warp up
 
-Let's begin this pool with a simple warp up : [The Go Tour](https://go.dev/tour/welcome/1)<br>
+Let's begin this pool with a simple warp up: [The Go Tour](https://go.dev/tour/welcome/1)<br>
 This tour is a set of exercice to learn Go basic.
 
 You can also try the [Go Playground](https://go.dev/play/), a useful tool to test or share piece of codes.
@@ -99,7 +99,7 @@ go mod init SoftwareGoDay1
 
 You should see a [`go.mod`](https://faun.pub/understanding-go-mod-and-go-sum-5fd7ec9bcc34?gi=7a3186a145d6) file appear in your directory.
 
-You can now create your first go file : `main.go`
+You can now create your first go file: `main.go`
 
 ```golang
 package main
@@ -343,7 +343,7 @@ See you!
 ```
 
 To do this, we must build a program that follows a strong architecture.
-We will use one of the most popular : [MVC](https://www.calhoun.io/using-mvc-to-structure-go-web-applications/).
+We will use one of the most popular: [MVC](https://www.calhoun.io/using-mvc-to-structure-go-web-applications/).
 
 MVC stands for **Model - View - Controller**. It's an architecture where your
 code logic is split into smaller part to easily maintain and scale a project.
@@ -716,7 +716,7 @@ You'll have to update all your codebase to supports those new fields.
 
 ## Step 8 - Interface
 
-It's time to learn another important concept in Go : [interfaces](https://go.dev/tour/methods/9).
+It's time to learn another important concept in Go: [interfaces](https://go.dev/tour/methods/9).
 
 To do so, we will do a simple example with geometric shapes :red_square:.
 
@@ -810,7 +810,7 @@ to display `Artist`.
 
 First, congratulation! You've survived day 1 :clap:
 
-Your MVC currently manages only one resource : `Artist`.
+Your MVC currently manages only one resource: `Artist`.
 
 You can create a new resources named `Music` containing the following data :
 - `id`: Resource unique identifier

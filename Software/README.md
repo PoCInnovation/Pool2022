@@ -1,4 +1,4 @@
-# :wave: Welcome to the PoC Software Pool 2022 !
+# :wave: Welcome to the PoC Software Pool 2022!
 
 During one week, you will be able to discover the different facets of software development: from database management to devops, through a tour of existing technologies.
 
@@ -12,7 +12,7 @@ External speakers will also come to bring their experience in the field and expl
 
 ## :open_book: Day 1 - Langage Initiation
 
-You will choose a langage : Typescript or Golang and learn the basics of it by creating an interactive application in your terminal.
+You will choose a langage: Typescript or Golang and learn the basics of it by creating an interactive application in your terminal.
 
 This choice will organise your week. You will learn something new in the choosen langage each of the following days.
 
@@ -27,7 +27,7 @@ winning combination - [Christophe VILLENEUVE](https://www.linkedin.com/in/christ
 
 ## :information_source: Day 2 - Database
 
-You will discover the relational databases through the managment of a PostgreSQL database in two ways : by hand with SQL queries and with an Object Relational Database (ORM).
+You will discover the relational databases through the managment of a PostgreSQL database in two ways: by hand with SQL queries and with an Object Relational Database (ORM).
 
 - [SQL](./day02/1%20-%20SQL/)
 
@@ -36,7 +36,7 @@ You will discover the relational databases through the managment of a PostgreSQL
 
 **Talks:**
 - You underestimate the databases - [Lucas SANTONI](https://www.linkedin.com/in/lucas1337/?originalSubdomain=fr)
-- Maria DB : a database
+- Maria DB: a database
 NewSQL - [Christophe VILLENEUVE](https://www.linkedin.com/in/christophe-villeneuve-3a68743/?originalSubdomain=fr)
 
 
@@ -68,7 +68,7 @@ The advancement of cloud and distributed infrastructures has exploded in the las
 
 ## :rose: Day 5 - User Interface
 
-During 4 days, you've worked on the `backend` part of an application. This day you will learn how to build the `frontend` part : the User Interface. You're free to choose React for web applications, or Flutter for mobile applications.
+During 4 days, you've worked on the `backend` part of an application. This day you will learn how to build the `frontend` part: the User Interface. You're free to choose React for web applications, or Flutter for mobile applications.
 
 - [React](./day05/React/)
 - [Flutter](./day05/Flutter/)

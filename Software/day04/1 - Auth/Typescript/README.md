@@ -14,7 +14,7 @@ Authentication has many purpose in this world of servers and API.<br>
 Manage users' account, control activities and limit privileges required to
 know the user identity.
 
-Many system exist today, depending on the usage and the consumers : Api key,
+Many system exist today, depending on the usage and the consumers: Api key,
 sessions, OAuth and so on, you can multiply the way to fit with your product
 and give the best possible user experience.
 
@@ -46,7 +46,7 @@ are then sent to the server on each request.<br>
 The server will then catch these information to user's identity, improve
 performance or adapt his behavior.
 
-You can store any kind of data in cookies : signed id, JSON object etc...<br>
+You can store any kind of data in cookies: signed id, JSON object etc...<br>
 However, pay attention to security, cookies are not secure by default and
 ìn a production application, it's importe to take time to 
 [secure cookies](https://resources.infosecinstitute.com/topic/securing-cookies-httponly-secure-flags/)
@@ -100,7 +100,7 @@ create 3 endpoints
 
 Create an endpoint `/cookies/register` with a resolver on method `POST`.
 
-The resolver must take as `body` parameter : 
+The resolver must take as `body` parameter: 
 
 ```json
 {
@@ -153,7 +153,7 @@ It's a signed electronic signature to verify consumer's identity. It's common
 to use [HMAC](https://en.wikipedia.org/wiki/HMAC) or [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem)) to sign tokens.<br>
 Those token can be store in cookies, but they can also be sent in a header.
 
-A JWT (JSON Web Token) is composed of 3 parts : `Header`, `Payload` and `Signature`.<br>
+A JWT (JSON Web Token) is composed of 3 parts: `Header`, `Payload` and `Signature`.<br>
 For more information about JWT, go to [jwt.io](https://jwt.io/introduction/). You can also use a [debugger](https://jwt.io/#debugger-io) to visualize the different parts of a jwt.
 
 The classic workflow for JWT authentication is :

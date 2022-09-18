@@ -46,7 +46,7 @@ In this third day, you will discover PyTorch, a framework to implement any deep-
 
 You will also discover convolutional neural networks that allow to process visual data like images or videos.
 
-Then you will discover the field of DevOps applied to Machine Learning on : MLOps
+Then you will discover the field of DevOps applied to Machine Learning on: MLOps
 
 **Modules:**
 

@@ -131,7 +131,7 @@ Now that our first page is done we can create the pages that will be displayed o
 
 Consider creating new components to keep your code as clear as possible.
 
-## Step 3 - What if you change the screen size ?
+## Step 3 - What if you change the screen size?
 
 To create a `responsive` application, that is to say an application that adapts to the size of the display in real time for that I let you do your research to keep your application responsive through the development of your application.
 
@@ -295,6 +295,6 @@ Add [annimations](https://docs.flutter.dev/development/ui/animations) to enhance
 
 Storing a JWT inside a store is a bad idea. Here is [how to solve this problem](https://flutteragency.com/save-jwt-tokens-in-flutter-apps/).
 
-Your turn !
+Your turn!
 
 > Made with :heart: by PoC

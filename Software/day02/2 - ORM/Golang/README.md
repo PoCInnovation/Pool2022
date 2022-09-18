@@ -105,7 +105,7 @@ Indeed, ENT is special compared to others, which is to *generate* code for you.
 
 ENT allows you, according to the schemas that you'll define directly in the GO code, to set up quickly the CRUD for your Database.
 
-> Is it really useful to automatically generate the CRUD ?
+> Is it really useful to automatically generate the CRUD?
 >
 > It depends on your use case, but if you want to quickly manipulate a database *without edge effects* (that is to say in a classic way), then yes it is useful! Imagine the time that you'll you win!
 
@@ -384,7 +384,7 @@ Before returning the requested information, we must therefore verify:
 - If the employee requested is in the team of this manager, that is to say in the perimeter of access/vision of this manager.
 - If the employee is the manager's responsibility.
 
-**When do we need to verify this information, in other words, make a logic ?**
+**When do we need to verify this information, in other words, make a logic?**
 
 Your database layer is only responsible for creating, retrieving, modifying or deleting database data. That's said, interacting with it.</br>
 Its operation can become already very complex as your application progresses over time.

@@ -10,7 +10,7 @@ Run the following commands :
 cp .envrc.example .envrc
 
 ###
-# Please update the .env file before going further !
+# Please update the .env file before going further!
 ###
 
 # To make sure your environment variables are loaded
@@ -19,7 +19,7 @@ direnv allow .
 # Build the API images and start the containers
 docker-compose up
 
-# Check if the server is running : you should get "Success"
+# Check if the server is running: you should get "Success"
 curl -s http://localhost:8080/health | grep "Up" > /dev/null && echo "Success" || echo "Failure"
 
 # Open the Visual Database Interface
@@ -30,44 +30,44 @@ xdg-open http://localhost:5555
 
 ### User
 
-- `id` :          **String**
-- `email` :       **String**
-- `password` :    **String**
-- `artists` :     **Artist[]**
+- `id`:          **String**
+- `email`:       **String**
+- `password`:    **String**
+- `artists`:     **Artist[]**
 
 ### Artist
 
-- `id` :          **String**
-- `name` :        **String**
-- `rating` :      **Int**
-- `nationality` : **String**
-- `musicGender` : **String**
-- `photoUrl` :    **String**
-- `musics` :      **Music[]**
-- `user` :        **User**
-- `userId` :      **String**
+- `id`:          **String**
+- `name`:        **String**
+- `rating`:      **Int**
+- `nationality`: **String**
+- `musicGender`: **String**
+- `photoUrl`:    **String**
+- `musics`:      **Music[]**
+- `user`:        **User**
+- `userId`:      **String**
 
 ### Music
 
-- `id` :          **String**
-- `name` :        **String**
-- `rating` :      **Int**
-- `url` :         **String**
-- `artist` :      **Artist**
-- `artistId` :    **String**
+- `id`:          **String**
+- `name`:        **String**
+- `rating`:      **Int**
+- `url`:         **String**
+- `artist`:      **Artist**
+- `artistId`:    **String**
 
 ## HTTP Routes
 
 ### Check state
 
-**Endpoint** : `/health`\
+**Endpoint**: `/health`\
 **Method**: `GET`\
 **Return**
   - **200**: OK
 
 ### Register
 
-**Endpoint** : `xxx/auth/register`\
+**Endpoint**: `xxx/auth/register`\
 **Method**: `POST`\
 ```json
 {
@@ -83,7 +83,7 @@ xdg-open http://localhost:5555
 
 ### Login
 
-**Endpoint** : `xxx/auth/login`\
+**Endpoint**: `xxx/auth/login`\
 **Method**: `POST`\
 **Body**:
 ```json
@@ -99,7 +99,7 @@ xdg-open http://localhost:5555
 
 ### Get User
 
-**Endpoint** : `xxx/user`\
+**Endpoint**: `xxx/user`\
 **Method**: `GET`\
 **Header**: `accessToken`\
 **Return**
@@ -109,7 +109,7 @@ xdg-open http://localhost:5555
 
 ### Create Artist
 
-**Endpoint** : `xxx/artist`\
+**Endpoint**: `xxx/artist`\
 **Method**: `POST`\
 **Header**: `accessToken`\
 **Body**:
@@ -131,7 +131,7 @@ xdg-open http://localhost:5555
 
 ### Get Artist
 
-**Endpoint** : `xxx/artist/:artistId`\
+**Endpoint**: `xxx/artist/:artistId`\
 **Method**: `GET`\
 **Header**: `accessToken`\
 **Return**
@@ -142,7 +142,7 @@ xdg-open http://localhost:5555
 
 ### Create Music
 
-**Endpoint** : `xxx/artist/:artistId/music`\
+**Endpoint**: `xxx/artist/:artistId/music`\
 **Method**: `POST`\
 **Header**: `accessToken`\
 **Body**:

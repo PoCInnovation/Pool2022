@@ -1,4 +1,4 @@
-# Module 12 : MLOps
+# Module 12: MLOps
 
 <img src=".img/MLOPS-pipeline.png" alt="MLOps overview" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
 
@@ -81,7 +81,7 @@ Upload your data to a remote storage (S3, Gdrive, SSH, etc) and share it across 
 <br/>
 
 ## Data exploration
-Now that you have your data you should take the time to explore it, to understand its meaning and determine which column will be usefull for your predictions.
+Now that you have your data you should take the time to explore it, to understand its meaning and determine which column will be useful for your predictions.
 
 You're totally free regarding the tools to use, if you want to use a notebook, R-lang, or a magnifying glass, do it!
 
@@ -147,7 +147,7 @@ Create a new python script that will load your csv and save it into a file endin
 
 Before going futher, let me ask a question: Are you not tired of re-running your all pipeline every time you need to change your data or find a mistake in your previous scripts? (If not you should be!)
 
-Well, once again DVC has a well named solution for you : [pipeline](https://dvc.org/doc/start/data-pipelines).
+Well, once again DVC has a well named solution for you: [pipeline](https://dvc.org/doc/start/data-pipelines).
 
 Implement a dvc pipeline containing all of your previous steps and for every incoming step, don't forget to add it to your pipeline.
 
@@ -166,7 +166,7 @@ Let's create your Dataset class and a function to create a DataLoader from it.
 
 <br/>
 
-## Sets : Train, test & valide
+## Sets: Train, test & valide
 
 Has you know, you will also need a testing and validation set to evaluate your model.\
 Let's create a function that given a data, return you three dataloader (train, val, test).

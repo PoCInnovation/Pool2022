@@ -27,7 +27,7 @@ Good luck and courage!
 
 ## Submit :trophy:
 
-Fill the notebook : ``Math-and-Numpy.ipynb``
+Fill the notebook: ``Math-and-Numpy.ipynb``
 
 To submit your work, think about pushing your changes. It is important to push so that we are able to assess participation.
 If you have any concerns, talk to a supervisor.

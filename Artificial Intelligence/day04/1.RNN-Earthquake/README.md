@@ -1,4 +1,4 @@
-# Module 13 : Recurrent Neural Network :pencil:
+# Module 13: Recurrent Neural Network :pencil:
 
 A series of seismic events has been occurring in the last few months throughout the northern hemisphere.
 The scientific team was able to recover the data from our different seismometers, you will have to exploit them.
