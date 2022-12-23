@@ -50,7 +50,7 @@ You will discover core concepts of the web and the basics of HTTP servers by bui
 **Talks:**
 - What makes a developer great ? - [Sam ALBA](https://www.linkedin.com/in/samalba/)
 
-## :policeman: Day 4 - Authentification & Docker
+## :policeman: Day 4 - Authentication & Docker
 
 The first part will be dedicated to the implementation of authentication. You will see the Json Web Token, passports and the use of sessions.
 
